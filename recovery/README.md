@@ -98,6 +98,29 @@ host used and host available); device VRAM every 2 seconds. CUDA allocator's exa
 allocated/reserved peaks are also reported. Sampling can miss brief host/device
 peaks; summed RSS can double-count shared memory. No whole-dataset GPU preload.
 
+## Fixed-split multi-seed execution
+
+The robustness runner preserves the original pilot files and newly trains all
+nine combinations of seeds 32/42/52 and real/random/header-only sequentially:
+
+```sh
+nix-shell recovery/shell.nix --run '.venv-recovery/bin/python -m recovery.multiseed'
+```
+
+It requires the pre-experiment snapshot `results/multiseed/experiment.json`.
+`--training-seed` (alias `--seed`) controls model/training and DataLoader RNGs.
+`--split-seed 32 --split-manifest results/splits-seed32.json` reuses the existing
+grouped split, never regenerating an explicitly supplied missing manifest.
+`--payload-seed 32` keeps the pilot transformation and cached graphs identical
+across training seeds, isolating training randomness. Without `--payload-seed`,
+legacy commands continue using the training seed for transformation/cache names.
+`--result-name` and separate results/checkpoint/log directories protect existing
+artifacts. Reports use sample standard deviation (ddof=1). Individual result JSONs
+include effective seeds, split file/assignment hashes, test sample IDs and full
+predictions. The runner checks capture/artifact hashes and independently recomputes
+metrics after all nine runs. Completed multi-seed results can be reused on an
+interrupted restart; partial checkpoints/logs are never silently overwritten.
+
 ## Research limits
 
 The local files contain TCP transport payloads, not independently verified pure

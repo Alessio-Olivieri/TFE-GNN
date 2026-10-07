@@ -7,6 +7,7 @@ import hashlib
 import importlib.metadata
 import json
 import math
+import os
 from pathlib import Path
 import platform
 import random
@@ -69,10 +70,46 @@ def evaluate(model, loader, device):
 
 def dataloader(samples, indices, args, batch_size, shuffle):
     generator = torch.Generator().manual_seed(args.seed)
-    return DataLoader(GraphFlows(samples, indices, args.data / 'graphs', args.payload_mode, args.seed),
+    return DataLoader(GraphFlows(samples, indices, args.data / 'graphs', args.payload_mode, args.payload_seed),
                       batch_size=batch_size, shuffle=shuffle, generator=generator,
                       collate_fn=collate, num_workers=args.workers,
-                      persistent_workers=args.workers > 0, pin_memory=args.device.startswith('cuda'))
+                      persistent_workers=args.workers > 0, pin_memory=args.device.startswith('cuda'),
+                      worker_init_fn=seed_worker)
+
+
+def seed_worker(worker_id):
+    # PyTorch sets the worker's Torch seed from the loader generator already.
+    worker_seed = torch.initial_seed() % 2**32
+    random.seed(worker_seed)
+    np.random.seed(worker_seed)
+
+
+def read_split(samples, path, seed, grouping):
+    """Validate a saved split without regenerating or modifying it."""
+    manifest = json.loads(path.read_text())
+    if manifest['seed'] != seed or manifest['grouping'] != grouping:
+        raise ValueError('Existing split settings differ; refusing to silently change the split')
+    records = manifest['samples']
+    fingerprint = hashlib.sha256(json.dumps(records, sort_keys=True).encode()).hexdigest()
+    if fingerprint != manifest['sample_manifest_sha256']:
+        raise ValueError('Saved split manifest fingerprint does not match its contents')
+    keys = ('id', 'label', 'capture', 'source_family', 'tuple_hash', 'content_hash')
+    if len(samples) != len(records) or any(
+            any(s[k] != r[k] for k in keys) for s, r in zip(samples, records)):
+        raise ValueError('Dataset differs from saved split manifest')
+    flattened = [i for indices in manifest['indices'].values() for i in indices]
+    if sorted(flattened) != list(range(len(samples))):
+        raise ValueError('Split indices must cover each sample exactly once')
+    for split, indices in manifest['indices'].items():
+        if indices != [i for i, r in enumerate(records) if r['split'] == split]:
+            raise ValueError('Split indices differ from saved membership')
+    for key in ('tuple_hash', 'content_hash', 'group_id'):
+        membership = {}
+        for record in records:
+            previous = membership.setdefault(record[key], record['split'])
+            if previous != record['split']:
+                raise ValueError(f'{key} leakage in saved split')
+    return manifest
 
 
 def train_attempt(samples, manifest, args, batch_size, log):
@@ -168,7 +205,12 @@ def train_attempt(samples, manifest, args, batch_size, log):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--payload-mode', choices=MODES, required=True)
-    parser.add_argument('--seed', type=int, default=32)
+    parser.add_argument('--seed', '--training-seed', dest='seed', type=int, default=32)
+    parser.add_argument('--split-seed', type=int, default=32)
+    parser.add_argument('--split-manifest', type=Path)
+    parser.add_argument('--payload-seed', type=int,
+                        help='Transformation/cache seed; defaults to training seed for legacy commands')
+    parser.add_argument('--result-name', help='Output basename; existing files are never overwritten')
     parser.add_argument('--epochs', type=int, default=20)
     parser.add_argument('--batch-size', type=int, default=8)
     parser.add_argument('--effective-batch-size', type=int, default=32)
@@ -182,35 +224,30 @@ def main():
     parser.add_argument('--allow-shared-captures', action='store_true')
     parser.add_argument('--prepare-only', action='store_true')
     args = parser.parse_args()
+    if args.payload_seed is None:
+        args.payload_seed = args.seed
     if args.epochs < 1 or args.batch_size < 1:
         parser.error('epochs and batch size must be positive')
     args.results.mkdir(exist_ok=True, parents=True)
     args.checkpoints.mkdir(exist_ok=True, parents=True)
     samples = load_flows(args.data)
-    manifest_path = args.results / f'splits-seed{args.seed}.json'
+    manifest_path = args.split_manifest or args.results / f'splits-seed{args.split_seed}.json'
     grouping = 'flow' if args.allow_shared_captures else 'capture'
-    if manifest_path.exists():
-        manifest = json.loads(manifest_path.read_text())
-        if manifest['seed'] != args.seed or manifest['grouping'] != grouping:
-            raise ValueError('Existing split settings differ; refusing to silently change the split')
-        if [s['id'] for s in samples] != [s['id'] for s in manifest['samples']]:
-            raise ValueError('Dataset differs from saved split manifest')
-        fingerprint = hashlib.sha256(json.dumps(manifest['samples'], sort_keys=True).encode()).hexdigest()
-        if fingerprint != manifest['sample_manifest_sha256']:
-            raise ValueError('Saved split manifest fingerprint does not match its contents')
+    if manifest_path.exists() or args.split_manifest is not None:
+        manifest = read_split(samples, manifest_path, args.split_seed, grouping)
     else:
-        manifest = grouped_split(samples, args.seed, grouping)
+        manifest = grouped_split(samples, args.split_seed, grouping)
         with manifest_path.open('x') as f:
             json.dump(manifest, f, indent=2)
     print('PRELIMINARY:', manifest['limitation'], flush=True)
     print('Split counts:', json.dumps(manifest['counts']), flush=True)
     print('Split fingerprint:', manifest['sample_manifest_sha256'], flush=True)
-    name = 'baseline' if args.payload_mode == 'real' else f'{args.payload_mode}-seed{args.seed}'
+    name = args.result_name or ('baseline' if args.payload_mode == 'real' else f'{args.payload_mode}-seed{args.seed}')
     output = args.results / f'{name}.json'
     if output.exists() and not args.prepare_only:
         raise FileExistsError(f'Refusing to overwrite existing results: {output}')
     prep_monitor = ResourceMonitor().start()
-    prepare_graphs(samples, args.data / 'graphs', args.payload_mode, args.seed, args.graph_workers)
+    prepare_graphs(samples, args.data / 'graphs', args.payload_mode, args.payload_seed, args.graph_workers)
     preprocessing_resources = prep_monitor.finish()
     receipt = args.results / f'preprocessing-{args.payload_mode}-seed{args.seed}.json'
     if not receipt.exists():
@@ -249,7 +286,24 @@ def main():
     source_hashes = {str(p): hashlib.sha256(p.read_bytes()).hexdigest()
                      for pattern in ('recovery/*.py', 'src/*.py') for p in sorted(Path('.').glob(pattern))}
     audit = json.loads((args.data / 'audit.json').read_text())
-    result.update(condition=args.payload_mode, seed=args.seed, preliminary=True,
+    result.update(condition=args.payload_mode, seed=args.seed, training_seed=args.seed,
+                  split_seed=args.split_seed, payload_seed=args.payload_seed,
+                  epochs_completed=len(result['history']),
+                  effective_seeds=dict(python=args.seed, numpy=args.seed, torch_cpu=args.seed,
+                                       torch_cuda=args.seed, dataloader_generator=args.seed,
+                                       dataloader_workers='torch.initial_seed() modulo 2**32 for Python/NumPy',
+                                       pythonhashseed=os.environ.get('PYTHONHASHSEED'),
+                                       split=args.split_seed, payload_randomization=args.payload_seed),
+                  payload_randomization=dict(applied=args.payload_mode == 'random', seed=args.payload_seed,
+                      algorithm='NumPy default_rng / PCG64',
+                      derivation='SHA256(f"{seed}:{sample_id}:{packet_ordinal}:payload"), first 16 bytes big endian',
+                      distribution='uniform uint8 0..255; full original payload length before truncation/padding/graph',
+                      graph_cache=str(args.data / 'graphs' / f'{args.payload_mode}-{args.payload_seed}')),
+                  split_file_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
+                  split_group_counts={split: len({manifest['samples'][i]['group_id'] for i in indices})
+                                      for split, indices in manifest['indices'].items()},
+                  test_sample_ids=[manifest['samples'][i]['id'] for i in manifest['indices']['test']],
+                  preliminary=True,
                   dataset='ISCX-VPN2016 local six-class captures', classes=CLASSES,
                   dataset_counts=audit['sample_counts'], split_counts=manifest['counts'],
                   split_sizes=manifest['sizes'], split_manifest=str(manifest_path),
@@ -259,6 +313,10 @@ def main():
                   software=versions, git_commit=commit, tracked_git_status=tracked_status,
                   source_sha256=source_hashes, command=shlex.join([sys.executable, '-m', 'recovery.run', *sys.argv[1:]]),
                   environment_command='nix-shell recovery/shell.nix',
+                  deterministic_settings=dict(torch_deterministic_algorithms=True,
+                      cudnn_deterministic=True, cudnn_benchmark=False, tf32=False,
+                      cublas_workspace_config=os.environ.get('CUBLAS_WORKSPACE_CONFIG'),
+                      torch_threads=4, dataloader_workers=args.workers),
                   timestamp_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                   hyperparameters=dict(epochs=args.epochs, lr=0.01, lr_min=0.0001, warmup=0.1,
                                        embedding_size=64, hidden_features=128, dropout=0.2,
@@ -274,7 +332,7 @@ def main():
     existed = comparison.exists()
     with comparison.open('a', newline='') as f:
         columns = ['condition', 'seed', 'accuracy', 'macro_precision', 'macro_recall', 'macro_f1']
-        writer = csv.DictWriter(f, fieldnames=columns, extrasaction='ignore')
+        writer = csv.DictWriter(f, fieldnames=columns, extrasaction='ignore', lineterminator='\n')
         if not existed:
             writer.writeheader()
         writer.writerow(result)

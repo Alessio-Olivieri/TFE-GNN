@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import struct
 import tempfile
+from types import SimpleNamespace
 import unittest
 
 import numpy as np
@@ -14,6 +15,8 @@ import torch
 from recovery.audit import packets, tcp_packet
 from recovery.data import grouped_split, payload_bytes, padded_graphs, collate
 from recovery.model import RecoveredTFEGNN, OriginalSemanticsEncoder
+from recovery.run import dataloader, read_split
+from recovery.multiseed import independent_metrics, stats
 
 
 def ipv4_packet(reverse=False, payload=b'abc', ip_options=b''):
@@ -148,6 +151,52 @@ class SplitAndModelTests(unittest.TestCase):
     def test_capture_split_refuses_insufficient_sources(self):
         with self.assertRaises(ValueError):
             grouped_split(self.samples(), 32, 'capture')
+
+    def test_saved_split_reused_without_training_seed_dependency(self):
+        samples = self.samples()
+        manifest = grouped_split(samples, 32)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'split.json'
+            path.write_text(json.dumps(manifest))
+            original = path.read_bytes()
+            for seed in (32, 42, 52):
+                saved = read_split(samples, path, 32, 'flow')
+                self.assertEqual(saved, manifest)
+                args = SimpleNamespace(seed=seed, payload_seed=32, data=Path(tmp),
+                    payload_mode='random', workers=0, device='cpu')
+                loader = dataloader(samples, saved['indices']['train'], args, 8, True)
+                self.assertEqual(loader.generator.initial_seed(), seed)
+                self.assertEqual(loader.dataset.seed, 32)
+                self.assertEqual(loader.dataset.indices, manifest['indices']['train'])
+            self.assertEqual(path.read_bytes(), original)
+            with self.assertRaises(ValueError):
+                read_split(samples, path, 42, 'flow')
+            with self.assertRaises(FileNotFoundError):
+                read_split(samples, Path(tmp) / 'missing.json', 32, 'flow')
+
+    def test_saved_split_rejects_tampered_indices_and_dataset(self):
+        samples = self.samples()
+        manifest = grouped_split(samples, 32)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'split.json'
+            changed = copy.deepcopy(samples)
+            changed[0]['content_hash'] = 'changed'
+            path.write_text(json.dumps(manifest))
+            with self.assertRaises(ValueError):
+                read_split(changed, path, 32, 'flow')
+            manifest['indices']['test'].append(manifest['indices']['train'][0])
+            path.write_text(json.dumps(manifest))
+            with self.assertRaises(ValueError):
+                read_split(samples, path, 32, 'flow')
+
+    def test_independent_metrics_and_sample_standard_deviation(self):
+        accuracy, f1, matrix = independent_metrics([0, 0, 1, 2, 3, 4, 5],
+                                                   [0, 1, 1, 2, 3, 4, 5])
+        self.assertAlmostEqual(accuracy, 6 / 7)
+        self.assertAlmostEqual(f1, (4 + 2 / 3 + 2 / 3) / 6)
+        self.assertEqual(matrix[0], [1, 1, 0, 0, 0, 0])
+        mean, std = stats([1, 2, 3])
+        self.assertEqual((mean, std), (2, 1))
 
     def test_batch_cpu_and_model_gradients(self):
         torch.manual_seed(32)
