@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "all_header_graphs_identical": true,
+  "unchanged_packet_payload_graphs_identical": true,
+  "header_graphs_checked": 83700,
+  "payload_graphs_checked": 83700,
+  "changed_payload_graphs": 11316,
+  "changed_sample_graphs": 565,
+  "split_class_counts": {
+    "train/0": {
+      "samples": 128,
+      "graph_changed_samples": 51,
+      "graph_changed_packets": 1034
+    },
+    "validation/0": {
+      "samples": 28,
+      "graph_changed_samples": 9,
+      "graph_changed_packets": 184
+    },
+    "test/0": {
+      "samples": 27,
+      "graph_changed_samples": 16,
+      "graph_changed_packets": 387
+    },
+    "train/1": {
+      "samples": 96,
+      "graph_changed_samples": 71,
+      "graph_changed_packets": 1432
+    },
+    "test/1": {
+      "samples": 21,
+      "graph_changed_samples": 20,
+      "graph_changed_packets": 489
+    },
+    "validation/1": {
+      "samples": 21,
+      "graph_changed_samples": 20,
+      "graph_changed_packets": 373
+    },
+    "train/2": {
+      "samples": 203,
+      "graph_changed_samples": 7,
+      "graph_changed_packets": 111
+    },
+    "test/2": {
+      "samples": 43,
+      "graph_changed_samples": 0,
+      "graph_changed_packets": 0
+    },
+    "validation/2": {
+      "samples": 44,
+      "graph_changed_samples": 0,
+      "graph_changed_packets": 0
+    },
+    "test/3": {
+      "samples": 35,
+      "graph_changed_samples": 0,
+      "graph_changed_packets": 0
+    },
+    "train/3": {
+      "samples": 163,
+      "graph_changed_samples": 0,
+      "graph_changed_packets": 0
+    },
+    "validation/3": {
+      "samples": 35,
+      "graph_changed_samples": 0,
+      "graph_changed_packets": 0
+    },
+    "train/4": {
+      "samples": 194,
+      "graph_changed_samples": 66,
+      "graph_changed_packets": 1299
+    },
+    "validation/4": {
+      "samples": 41,
+      "graph_changed_samples": 16,
+      "graph_changed_packets": 349
+    },
+    "test/4": {
+      "samples": 41,
+      "graph_changed_samples": 11,
+      "graph_changed_packets": 160
+    },
+    "train/5": {
+      "samples": 388,
+      "graph_changed_samples": 190,
+      "graph_changed_packets": 3821
+    },
+    "validation/5": {
+      "samples": 83,
+      "graph_changed_samples": 50,
+      "graph_changed_packets": 971
+    },
+    "test/5": {
+      "samples": 83,
+      "graph_changed_samples": 38,
+      "graph_changed_packets": 706
+    }
+  },
+  "original_graphs_used_only_for_validation_and_real_condition": true,
+  "transformed_condition_uses_only_fresh_transformed_graphs": true
+}

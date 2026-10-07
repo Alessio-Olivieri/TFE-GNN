@@ -1,0 +1,2637 @@
+{
+  "version": "tls12-gcm-packet-range-pcg64-v1",
+  "packets": [
+    {
+      "capture": "Chat/vpn_facebook_chat1a.pcap",
+      "capture_id": "5b4fc79048c150e045d45097f34616c91612d6bf1ec5a8a9d959486effa026ab",
+      "flow_id": "45c1e685855ad9e034c57022efd0058a64f2a666b2ce57e9bbf3be48e7f7f194",
+      "label": 0,
+      "split": "validation",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 5181,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 124,
+          "kind": "ciphertext",
+          "start": 108
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 89,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 89
+        },
+        {
+          "end": 95,
+          "kind": "framing",
+          "start": 94
+        },
+        {
+          "end": 100,
+          "kind": "framing",
+          "start": 95
+        },
+        {
+          "end": 108,
+          "kind": "framing",
+          "start": 100
+        },
+        {
+          "end": 140,
+          "kind": "authentication",
+          "start": 124
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "9e841db82aeefc7d59b6065dd71afaf70efa3ac144869f420474598ad8ce6349",
+      "after_sha256": "0e1225e0be9f368905ab49b51c3bf1e4d1033d66620815f7a2c50832dbf03473"
+    },
+    {
+      "capture": "Chat/vpn_facebook_chat1a.pcap",
+      "capture_id": "5b4fc79048c150e045d45097f34616c91612d6bf1ec5a8a9d959486effa026ab",
+      "flow_id": "45c1e685855ad9e034c57022efd0058a64f2a666b2ce57e9bbf3be48e7f7f194",
+      "label": 0,
+      "split": "validation",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 5183,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "427f61da555f189f32ff583225194d8304be6b91675d13ff061f92b38ce28bdd",
+      "after_sha256": "c4159e17d99c847e4ef91cde6e5055b15e401f1bb3f81e956b75b0b44081568b"
+    },
+    {
+      "capture": "Chat/vpn_facebook_chat1a.pcap",
+      "capture_id": "5b4fc79048c150e045d45097f34616c91612d6bf1ec5a8a9d959486effa026ab",
+      "flow_id": "45c1e685855ad9e034c57022efd0058a64f2a666b2ce57e9bbf3be48e7f7f194",
+      "label": 0,
+      "split": "validation",
+      "packet_index": 8,
+      "payload_ordinal": 3,
+      "frame": 5184,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 137,
+      "before_sha256": "407743573255c67475e6d4bf283feb0af914daca085a1be90a3f8748333ca47d",
+      "after_sha256": "065bb8a8a6a13b571c78527b32695c6132718905d5db7ddc90edaf0b5b614dd9"
+    },
+    {
+      "capture": "Chat/vpn_hangouts_chat1a.pcap",
+      "capture_id": "bc675d9f43ad26aba8b61b9e179261882862fb373a007c75812e645feaf4fc76",
+      "flow_id": "08a353b9d86bc41f6aa0a7ed135511c9927a53dae80bc309ed55848aba79002c",
+      "label": 0,
+      "split": "train",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 8472,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "487cc4a5c11c73558ec2b79aed2733cf5347e3abeaa3e7694e8a161516bdf52a",
+      "after_sha256": "4d3d3d0fd8735a421db0cbf09dfba19daed8517bbb3e21ebbefbad9440f37acb"
+    },
+    {
+      "capture": "Chat/vpn_hangouts_chat1a.pcap",
+      "capture_id": "bc675d9f43ad26aba8b61b9e179261882862fb373a007c75812e645feaf4fc76",
+      "flow_id": "08a353b9d86bc41f6aa0a7ed135511c9927a53dae80bc309ed55848aba79002c",
+      "label": 0,
+      "split": "train",
+      "packet_index": 12,
+      "payload_ordinal": 5,
+      "frame": 8474,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 141,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 150,
+          "kind": "authentication",
+          "start": 141
+        }
+      ],
+      "targeted_bytes": 128,
+      "changed_bytes": 127,
+      "before_sha256": "971638d8e12679de41809e766edfee84ffb342176db6e74643079edcc31304a7",
+      "after_sha256": "934af193a78dc7ca360e9865c988ebbf86aa01bbe449905d6d346ef6ed708527"
+    },
+    {
+      "capture": "Chat/vpn_hangouts_chat1a.pcap",
+      "capture_id": "bc675d9f43ad26aba8b61b9e179261882862fb373a007c75812e645feaf4fc76",
+      "flow_id": "08a353b9d86bc41f6aa0a7ed135511c9927a53dae80bc309ed55848aba79002c",
+      "label": 0,
+      "split": "train",
+      "packet_index": 14,
+      "payload_ordinal": 7,
+      "frame": 8479,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 40,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 56,
+          "kind": "authentication",
+          "start": 40
+        }
+      ],
+      "targeted_bytes": 27,
+      "changed_bytes": 27,
+      "before_sha256": "9ac2c77c0889c6b9c80f7b9b7053bae4e8c0fc4f01ad068edaa04cf96d70bbee",
+      "after_sha256": "d4cca219a1d352efaa5c6ae9931d81b47c4e24cc86962a2dd8c19ea8c6dfcb26"
+    },
+    {
+      "capture": "Chat/vpn_hangouts_chat1b.pcap",
+      "capture_id": "e0429c54dd5b05e9156f932c38d192be8addc773acf7fb3cdef8e283f35e3fb7",
+      "flow_id": "0c5078e8316f929d0d7a990646caacc9b91aec88390b038e2da6b1f2e0e59a2d",
+      "label": 0,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 4,
+      "frame": 11154,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "df854936e612c41a66091708a136e66686eae3564f8e94656cd1cf5a71e7d21b",
+      "after_sha256": "9c3a780cc49767548030cb96fd2ffd8b73e54385b2ab4967d242e219cc9e14d1"
+    },
+    {
+      "capture": "Chat/vpn_hangouts_chat1b.pcap",
+      "capture_id": "e0429c54dd5b05e9156f932c38d192be8addc773acf7fb3cdef8e283f35e3fb7",
+      "flow_id": "0c5078e8316f929d0d7a990646caacc9b91aec88390b038e2da6b1f2e0e59a2d",
+      "label": 0,
+      "split": "train",
+      "packet_index": 14,
+      "payload_ordinal": 5,
+      "frame": 11155,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 141,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 150,
+          "kind": "authentication",
+          "start": 141
+        }
+      ],
+      "targeted_bytes": 128,
+      "changed_bytes": 128,
+      "before_sha256": "c65f54ac55d7d6087925afe83e4d321c32a17c04be34c76a23df606609e5a4e5",
+      "after_sha256": "df6b5a4c7db4fc018aff89132dec3794c294dd8b380671529379fdbd6ee0521f"
+    },
+    {
+      "capture": "Chat/vpn_hangouts_chat1b.pcap",
+      "capture_id": "e0429c54dd5b05e9156f932c38d192be8addc773acf7fb3cdef8e283f35e3fb7",
+      "flow_id": "0c5078e8316f929d0d7a990646caacc9b91aec88390b038e2da6b1f2e0e59a2d",
+      "label": 0,
+      "split": "train",
+      "packet_index": 15,
+      "payload_ordinal": 6,
+      "frame": 11156,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 135,
+      "before_sha256": "9062ead567b23c1a6406e69b500096ee6b3f8a20fe5e1f085f99bf4d20a11301",
+      "after_sha256": "3a5782c012e0ab0defe1f677bbab96be4eeb85d8d7bd4f40b3973201659b277b"
+    },
+    {
+      "capture": "Email/vpn_email2a.pcap",
+      "capture_id": "1a156940f0f434318479704f90b141a0246c92036219714993019cde28149d85",
+      "flow_id": "053a7ed73237b17a4ea7404b49b28d419dd27a81a6e21ffac905ae17142e94a1",
+      "label": 1,
+      "split": "train",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 2096,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 121,
+          "kind": "ciphertext",
+          "start": 105
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 86,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 91,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 92,
+          "kind": "framing",
+          "start": 91
+        },
+        {
+          "end": 97,
+          "kind": "framing",
+          "start": 92
+        },
+        {
+          "end": 105,
+          "kind": "framing",
+          "start": 97
+        },
+        {
+          "end": 137,
+          "kind": "authentication",
+          "start": 121
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "838a8d0df1b3cba071953ddb0adecd503e1882a66cf4d175dd90bb5b3b1fcd4f",
+      "after_sha256": "d3094cd4d92bc72ba178f465ff26dd6ee49d3254b6c58b3a2508b933209bcd6f"
+    },
+    {
+      "capture": "Email/vpn_email2a.pcap",
+      "capture_id": "1a156940f0f434318479704f90b141a0246c92036219714993019cde28149d85",
+      "flow_id": "053a7ed73237b17a4ea7404b49b28d419dd27a81a6e21ffac905ae17142e94a1",
+      "label": 1,
+      "split": "train",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 2098,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "768a85b649dea62638106be1ad3e6e23ebdc3c9170289d1ff0513e47fa1099a7",
+      "after_sha256": "68454d28760106cebd5652cef47a362a6b6d6c295c2ee615141c5e2f4cda821f"
+    },
+    {
+      "capture": "Email/vpn_email2a.pcap",
+      "capture_id": "1a156940f0f434318479704f90b141a0246c92036219714993019cde28149d85",
+      "flow_id": "053a7ed73237b17a4ea7404b49b28d419dd27a81a6e21ffac905ae17142e94a1",
+      "label": 1,
+      "split": "train",
+      "packet_index": 8,
+      "payload_ordinal": 3,
+      "frame": 2099,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 65,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 81,
+          "kind": "authentication",
+          "start": 65
+        }
+      ],
+      "targeted_bytes": 52,
+      "changed_bytes": 52,
+      "before_sha256": "7fc389c1a0d1f2ed51987f7ec3ce8fc282a76d32546ef56d0de9795fc150842a",
+      "after_sha256": "cb7efe4dba4f7f6e09beded57f00610bb94c257e48ac0c7c80f7f192fa56f218"
+    },
+    {
+      "capture": "Email/vpn_email2b.pcap",
+      "capture_id": "762f7b48825e6e7071c5fad90a8c26ebbb61cb25d5e71eeb9347c22a0e9c7c6f",
+      "flow_id": "000a90660ce9815ccbed4e17f47aa280aa5c16ba4e7e0ed24172dfb2173b5fcc",
+      "label": 1,
+      "split": "train",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 15092,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 121,
+          "kind": "ciphertext",
+          "start": 105
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 86,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 91,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 92,
+          "kind": "framing",
+          "start": 91
+        },
+        {
+          "end": 97,
+          "kind": "framing",
+          "start": 92
+        },
+        {
+          "end": 105,
+          "kind": "framing",
+          "start": 97
+        },
+        {
+          "end": 137,
+          "kind": "authentication",
+          "start": 121
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "3ce5be249e6ba26eb8f0493325ac1a137adc460ba2177df5ae02b772b57ef9f5",
+      "after_sha256": "f82eb951cd0f4370b8e5127ae8afa3fadaf7b951fb172f19db9605fdf881ac64"
+    },
+    {
+      "capture": "Email/vpn_email2b.pcap",
+      "capture_id": "762f7b48825e6e7071c5fad90a8c26ebbb61cb25d5e71eeb9347c22a0e9c7c6f",
+      "flow_id": "000a90660ce9815ccbed4e17f47aa280aa5c16ba4e7e0ed24172dfb2173b5fcc",
+      "label": 1,
+      "split": "train",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 15094,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "00f5215eddf2321855d7fdfbd6966cda541be8a62fe72442e2f44b269357f4d3",
+      "after_sha256": "867a9526b582f3142ce3100b6482ed45085d030cc979fe185d7f315f6a959647"
+    },
+    {
+      "capture": "Email/vpn_email2b.pcap",
+      "capture_id": "762f7b48825e6e7071c5fad90a8c26ebbb61cb25d5e71eeb9347c22a0e9c7c6f",
+      "flow_id": "000a90660ce9815ccbed4e17f47aa280aa5c16ba4e7e0ed24172dfb2173b5fcc",
+      "label": 1,
+      "split": "train",
+      "packet_index": 8,
+      "payload_ordinal": 3,
+      "frame": 15095,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 64,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 80,
+          "kind": "authentication",
+          "start": 64
+        }
+      ],
+      "targeted_bytes": 51,
+      "changed_bytes": 51,
+      "before_sha256": "8cdf1aa1ecde7047433e5b028e852f0cf93f1948c56b3b4d66b0bd898e4bd928",
+      "after_sha256": "c1e1d5c8a7a6c304d512c5b9f412960cb22dd2881d1f7dca825ebe529ad16a86"
+    },
+    {
+      "capture": "FileTransfer/vpn_ftps_B.pcap",
+      "capture_id": "4ced53ca8895deb0801cc450aad0b6c32534ad5c864fc71ae39233e78a073331",
+      "flow_id": "47a5d713f76cf14d571507a39d5fe96a0a8065ac694faf7dcc0ca386026076b3",
+      "label": 2,
+      "split": "train",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 4355,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 133,
+          "kind": "ciphertext",
+          "start": 117
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 98,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 103,
+          "kind": "framing",
+          "start": 98
+        },
+        {
+          "end": 104,
+          "kind": "framing",
+          "start": 103
+        },
+        {
+          "end": 109,
+          "kind": "framing",
+          "start": 104
+        },
+        {
+          "end": 117,
+          "kind": "framing",
+          "start": 109
+        },
+        {
+          "end": 149,
+          "kind": "authentication",
+          "start": 133
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "7e64bdd4f8e7c93030162d34060e123adf09ecda6192cd2ed61f28f8c1b9b032",
+      "after_sha256": "426909590f0e60140d2e3ebf422177d1e2a59922acfac0547a9370a6d6859e4e"
+    },
+    {
+      "capture": "FileTransfer/vpn_ftps_B.pcap",
+      "capture_id": "4ced53ca8895deb0801cc450aad0b6c32534ad5c864fc71ae39233e78a073331",
+      "flow_id": "47a5d713f76cf14d571507a39d5fe96a0a8065ac694faf7dcc0ca386026076b3",
+      "label": 2,
+      "split": "train",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 4357,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "d62a6d8214202677fb7f3bfca4487b62767cb3dfc0cd0b33bbf867424480d35f",
+      "after_sha256": "1a6bfb7081c5bd82410cfe41b5e127cfabe59556d603371c4f3d18c24335be3b"
+    },
+    {
+      "capture": "FileTransfer/vpn_ftps_B.pcap",
+      "capture_id": "4ced53ca8895deb0801cc450aad0b6c32534ad5c864fc71ae39233e78a073331",
+      "flow_id": "47a5d713f76cf14d571507a39d5fe96a0a8065ac694faf7dcc0ca386026076b3",
+      "label": 2,
+      "split": "train",
+      "packet_index": 8,
+      "payload_ordinal": 3,
+      "frame": 4358,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 37,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 53,
+          "kind": "authentication",
+          "start": 37
+        }
+      ],
+      "targeted_bytes": 24,
+      "changed_bytes": 24,
+      "before_sha256": "3b5b4a930ee23f63afd7ba69e0168e09c472115783a6ef423d95735e594eaa78",
+      "after_sha256": "916f5735b8e311a5bb5e213f70c409cfbd5a3ee07d6c8fd31de77610941a6ca1"
+    },
+    {
+      "capture": "FileTransfer/vpn_sftp_A.pcap",
+      "capture_id": "fff704fee62577b104ba46cead5f8057ba861e64df9789a8b2cee19e8ed6dc44",
+      "flow_id": "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+      "label": 2,
+      "split": "train",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 33627,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "67a122d0451c81e061d6b87d09dca563a1d30ed4b1c884cc12b31b90bfcb5a6b",
+      "after_sha256": "8ce7e27230636e84b910d458f6976ebe1bfd71d661820b3bc43890c43209dd43"
+    },
+    {
+      "capture": "FileTransfer/vpn_sftp_A.pcap",
+      "capture_id": "fff704fee62577b104ba46cead5f8057ba861e64df9789a8b2cee19e8ed6dc44",
+      "flow_id": "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+      "label": 2,
+      "split": "train",
+      "packet_index": 12,
+      "payload_ordinal": 5,
+      "frame": 33628,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 37,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 53,
+          "kind": "authentication",
+          "start": 37
+        }
+      ],
+      "targeted_bytes": 24,
+      "changed_bytes": 24,
+      "before_sha256": "ba5ed76819ff83c1c2cac5ca37d3c514570595cdcff315978ce49decb1f930de",
+      "after_sha256": "26e38a5f009449a685bd4b658a907b98ba6c91e18aeb64ad6910e5d4e643b49e"
+    },
+    {
+      "capture": "FileTransfer/vpn_sftp_A.pcap",
+      "capture_id": "fff704fee62577b104ba46cead5f8057ba861e64df9789a8b2cee19e8ed6dc44",
+      "flow_id": "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+      "label": 2,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 33629,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 34,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 50,
+          "kind": "authentication",
+          "start": 34
+        }
+      ],
+      "targeted_bytes": 21,
+      "changed_bytes": 21,
+      "before_sha256": "a1bff8fc2cda8537fad23ec6573fb632860f12d28a7699a7804f06b3d1d5009f",
+      "after_sha256": "72054510bde50e666a18a77b9499fd4078e167d391f481e81fe41998b031b7ce"
+    },
+    {
+      "capture": "FileTransfer/vpn_skype_files1b.pcap",
+      "capture_id": "37bbdaf33d18f2c0b5288b59d53533ea0bf9c5b0cbed1c16f5cae17f74231c63",
+      "flow_id": "0a6181f07d0c93953b6eeb82ac75e7c79c2ce47b22386ae85f70beb401df4fb4",
+      "label": 2,
+      "split": "train",
+      "packet_index": 15,
+      "payload_ordinal": 6,
+      "frame": 20105,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "91725163223dfd1ab49c3916615137c6eed62340ce582fc24df8b5c672dd470c",
+      "after_sha256": "c0fbfb54f4cf4f27282ded8750037d7eee747b0ba3878b08e85cf085fbe42d24"
+    },
+    {
+      "capture": "FileTransfer/vpn_skype_files1b.pcap",
+      "capture_id": "37bbdaf33d18f2c0b5288b59d53533ea0bf9c5b0cbed1c16f5cae17f74231c63",
+      "flow_id": "0a6181f07d0c93953b6eeb82ac75e7c79c2ce47b22386ae85f70beb401df4fb4",
+      "label": 2,
+      "split": "train",
+      "packet_index": 16,
+      "payload_ordinal": 7,
+      "frame": 20107,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "9eec7b02a3638b521fd9505a9880ef98a45b8a7a8428d413b6c99b97dad3e1f2",
+      "after_sha256": "0b6c85a7eb332a7ee462c1269b83335492fd5937808fff250e30022ab270277c"
+    },
+    {
+      "capture": "FileTransfer/vpn_skype_files1b.pcap",
+      "capture_id": "37bbdaf33d18f2c0b5288b59d53533ea0bf9c5b0cbed1c16f5cae17f74231c63",
+      "flow_id": "0a6181f07d0c93953b6eeb82ac75e7c79c2ce47b22386ae85f70beb401df4fb4",
+      "label": 2,
+      "split": "train",
+      "packet_index": 17,
+      "payload_ordinal": 8,
+      "frame": 20110,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 137,
+      "before_sha256": "2d0e258f0c6714ddf7fe40e94490f7a39ab1ea3ad88f90c3e237235404bb8986",
+      "after_sha256": "409babc9ae3b38eb691228948a26ced332e20ebd3ca8b0b87167a2ceaaef3329"
+    },
+    {
+      "capture": "Streaming/vpn_netflix_A.pcap",
+      "capture_id": "eb7bc6d06d10ebb7d9981f957a70ec4fd779f584b9a0b67814e1b07907c84a0d",
+      "flow_id": "1bc54420bb88c0020b7713c2530399d62301a6537d6f1395b2088419f1767933",
+      "label": 4,
+      "split": "train",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 781861,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "1b2e03f4fb6c74d12748581fbcc9965391ba31d9e4aa27da8b0d1e4b2148806a",
+      "after_sha256": "5af707556bdd9709b0ae48b9aff1c4341fb93c18e4f883b61602b54f3cd54a00"
+    },
+    {
+      "capture": "Streaming/vpn_netflix_A.pcap",
+      "capture_id": "eb7bc6d06d10ebb7d9981f957a70ec4fd779f584b9a0b67814e1b07907c84a0d",
+      "flow_id": "1bc54420bb88c0020b7713c2530399d62301a6537d6f1395b2088419f1767933",
+      "label": 4,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 781863,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 134,
+      "before_sha256": "e68e821006c62331d57b8b9ccf502568306d52aadd50587811296e0a20758f2e",
+      "after_sha256": "f8c3771911dbb5ca16d8421dfede6a505b4d31dde604eef491a1e14134359ba5"
+    },
+    {
+      "capture": "Streaming/vpn_netflix_A.pcap",
+      "capture_id": "eb7bc6d06d10ebb7d9981f957a70ec4fd779f584b9a0b67814e1b07907c84a0d",
+      "flow_id": "1bc54420bb88c0020b7713c2530399d62301a6537d6f1395b2088419f1767933",
+      "label": 4,
+      "split": "train",
+      "packet_index": 14,
+      "payload_ordinal": 7,
+      "frame": 781864,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 0
+        }
+      ],
+      "nearby_preserved_ranges": [],
+      "targeted_bytes": 150,
+      "changed_bytes": 150,
+      "before_sha256": "48dcca91a1a1083992f9fe511168995164082f90c78cdbdc3ae9d650534801c5",
+      "after_sha256": "ef4841e5c806ec8e82bf7c97f61d83b3728472de7d16a3c55a0f0b2bf8a28e47"
+    },
+    {
+      "capture": "Streaming/vpn_spotify_A.pcap",
+      "capture_id": "c9cf8dea7551b3ba54f16f5e7aa416409a1bb6e30867d27b9decbef05baaab37",
+      "flow_id": "1e2823861118fcaffa638329471d40dc83a7c6230b590bfbf88da4c713a30a1f",
+      "label": 4,
+      "split": "validation",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 102920,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 15,
+      "before_sha256": "f607dac51d861b7b819ffe1825fa167f81ccfccf16057bd5c124d6a8bb87002d",
+      "after_sha256": "632334f6fbccbb029157005ee64b7ccb16dc5bff4e19412790a718b7a224cdb8"
+    },
+    {
+      "capture": "Streaming/vpn_spotify_A.pcap",
+      "capture_id": "c9cf8dea7551b3ba54f16f5e7aa416409a1bb6e30867d27b9decbef05baaab37",
+      "flow_id": "1e2823861118fcaffa638329471d40dc83a7c6230b590bfbf88da4c713a30a1f",
+      "label": 4,
+      "split": "validation",
+      "packet_index": 12,
+      "payload_ordinal": 5,
+      "frame": 102921,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 37,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 53,
+          "kind": "authentication",
+          "start": 37
+        }
+      ],
+      "targeted_bytes": 24,
+      "changed_bytes": 24,
+      "before_sha256": "1c2328cb63c3172590b1308d6079c6e3425c14d7681c0e7eb1e01834c2fb3821",
+      "after_sha256": "ebd3c742a80588be6119d2378c56a387f560f67b3ff15215edbe2b585a297b79"
+    },
+    {
+      "capture": "Streaming/vpn_spotify_A.pcap",
+      "capture_id": "c9cf8dea7551b3ba54f16f5e7aa416409a1bb6e30867d27b9decbef05baaab37",
+      "flow_id": "1e2823861118fcaffa638329471d40dc83a7c6230b590bfbf88da4c713a30a1f",
+      "label": 4,
+      "split": "validation",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 102922,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 34,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 50,
+          "kind": "authentication",
+          "start": 34
+        }
+      ],
+      "targeted_bytes": 21,
+      "changed_bytes": 21,
+      "before_sha256": "ff7e5408c57f9cb23d70db9bbfaaa77571953fe16dff22d631e4bc3d77ebb8b2",
+      "after_sha256": "4bd7be0cc271ec1161ccef3efac17e608fe1e07992b136eef22562ad8c6d5e87"
+    },
+    {
+      "capture": "Streaming/vpn_vimeo_A.pcap",
+      "capture_id": "d03dbb15c7d938e81e7b2ce1a9606ba64c23ddd0ccc449de4d1e8d30dba047eb",
+      "flow_id": "172ee73d7b2724df3dfa0e4a912a557291b5348904f6e797260538dce417fb80",
+      "label": 4,
+      "split": "train",
+      "packet_index": 10,
+      "payload_ordinal": 4,
+      "frame": 104870,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "0e3f37ee74de3c69d6ccf6db4025ca21246736e0a88d9dc04afe20174d71afd1",
+      "after_sha256": "5212c518279f8bee73efcc46224aa5ada4298e3117f5d9a6646d92908d428e9b"
+    },
+    {
+      "capture": "Streaming/vpn_vimeo_A.pcap",
+      "capture_id": "d03dbb15c7d938e81e7b2ce1a9606ba64c23ddd0ccc449de4d1e8d30dba047eb",
+      "flow_id": "50380b7f88034097c061b778cb53287b554670eec9710b1309bc3a096e6fe8e0",
+      "label": 4,
+      "split": "train",
+      "packet_index": 12,
+      "payload_ordinal": 5,
+      "frame": 104783,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "558dba94cb33a63ac823837510b62a513501f32088eabe3c973dbf3e211456e7",
+      "after_sha256": "0b82509795ffdd16dab2dae823487f7ac65bcfdb6181b62e9c815f1bb993be83"
+    },
+    {
+      "capture": "Streaming/vpn_vimeo_A.pcap",
+      "capture_id": "d03dbb15c7d938e81e7b2ce1a9606ba64c23ddd0ccc449de4d1e8d30dba047eb",
+      "flow_id": "50380b7f88034097c061b778cb53287b554670eec9710b1309bc3a096e6fe8e0",
+      "label": 4,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 104786,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 137,
+      "before_sha256": "64b097394bf18edc7b84fb125123a054354d7072ce07eb6b50e3ff73f7ff89b7",
+      "after_sha256": "07fb63df9ede6290ef690251da4167ffb64a5d9aea66c4943f744f55159a29e9"
+    },
+    {
+      "capture": "Streaming/vpn_vimeo_B.pcap",
+      "capture_id": "963e9c150a37d843da77871ae8d864c3ce025e2e5ead651a8219b6a35cdeacf5",
+      "flow_id": "11881ea1579c6ea38313de31eee6f24bcb392ac4a6c99bd714ae6be2f0ffc79d",
+      "label": 4,
+      "split": "train",
+      "packet_index": 12,
+      "payload_ordinal": 5,
+      "frame": 16202,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "9c07548cfe9dfdc42c2d29388457bc0e053c2d21e32234e6487244daabc3adbe",
+      "after_sha256": "00f49d288e4c0bfbedd94a11fd2c9972a872de2e59b6c7a678a2036184acea68"
+    },
+    {
+      "capture": "Streaming/vpn_vimeo_B.pcap",
+      "capture_id": "963e9c150a37d843da77871ae8d864c3ce025e2e5ead651a8219b6a35cdeacf5",
+      "flow_id": "11881ea1579c6ea38313de31eee6f24bcb392ac4a6c99bd714ae6be2f0ffc79d",
+      "label": 4,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 16203,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 137,
+      "before_sha256": "5f6592be32c44242a6bce88778a1a5787f8ae4199242c6b6d3619c869c34fe4c",
+      "after_sha256": "1f4786497c4a88f7211e0711a1d2dba5bbac8e2408a0c361bcc58b1e5dc13106"
+    },
+    {
+      "capture": "Streaming/vpn_vimeo_B.pcap",
+      "capture_id": "963e9c150a37d843da77871ae8d864c3ce025e2e5ead651a8219b6a35cdeacf5",
+      "flow_id": "11881ea1579c6ea38313de31eee6f24bcb392ac4a6c99bd714ae6be2f0ffc79d",
+      "label": 4,
+      "split": "train",
+      "packet_index": 15,
+      "payload_ordinal": 8,
+      "frame": 16248,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 136,
+      "before_sha256": "4f936c86c6f4fea600210a96ca43ecd6091e5a03c0ad78104584ce004aad4f40",
+      "after_sha256": "0377eff2fce4f7daf12ea3f12dd39c07257814e2e5d2731b6756299cdaef7886"
+    },
+    {
+      "capture": "Streaming/vpn_youtube_A.pcap",
+      "capture_id": "df444c7eb1148a32baf8ccb29404aceb294423f9aac2aa9a0edb557a1c2be9b7",
+      "flow_id": "04aff624aa04e83a91fed18f0b6788368ae11ca1bed16ac53ec97af829b9d4ac",
+      "label": 4,
+      "split": "test",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 88508,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 121,
+          "kind": "ciphertext",
+          "start": 105
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 86,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 91,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 92,
+          "kind": "framing",
+          "start": 91
+        },
+        {
+          "end": 97,
+          "kind": "framing",
+          "start": 92
+        },
+        {
+          "end": 105,
+          "kind": "framing",
+          "start": 97
+        },
+        {
+          "end": 137,
+          "kind": "authentication",
+          "start": 121
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "d29946f0db94f6221d81543666f89dbce78f7e80c4ddc206b69b4c7785328984",
+      "after_sha256": "c57b537c535b46c376911e3a9034a35b47b47bc7075837649835af5ca820c7b5"
+    },
+    {
+      "capture": "Streaming/vpn_youtube_A.pcap",
+      "capture_id": "df444c7eb1148a32baf8ccb29404aceb294423f9aac2aa9a0edb557a1c2be9b7",
+      "flow_id": "04aff624aa04e83a91fed18f0b6788368ae11ca1bed16ac53ec97af829b9d4ac",
+      "label": 4,
+      "split": "test",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 88510,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "af16ed816fabcf5b66ab3a17a899ec0a6ebf0d87ff3f86c3eec2c0ae65fe0256",
+      "after_sha256": "ae4a90ce2d947034366f96152ecbeb6b37c6fa5d9bb8eddb2625541619f4d0b9"
+    },
+    {
+      "capture": "Streaming/vpn_youtube_A.pcap",
+      "capture_id": "df444c7eb1148a32baf8ccb29404aceb294423f9aac2aa9a0edb557a1c2be9b7",
+      "flow_id": "073ee54e6c31eb30af33222297410b98ca9b5b62a54267839095b46998fa8ef4",
+      "label": 4,
+      "split": "train",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 123183,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 121,
+          "kind": "ciphertext",
+          "start": 105
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 86,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 91,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 92,
+          "kind": "framing",
+          "start": 91
+        },
+        {
+          "end": 97,
+          "kind": "framing",
+          "start": 92
+        },
+        {
+          "end": 105,
+          "kind": "framing",
+          "start": 97
+        },
+        {
+          "end": 137,
+          "kind": "authentication",
+          "start": 121
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "7af58adcf77d3e64321b8408d117cfeb0ee1c0850608e5a87361dc6bc8dfe634",
+      "after_sha256": "8f035eead9205f7a5410ba037fc362d8d0633e7d52cfee05a3c45da08abe7140"
+    },
+    {
+      "capture": "VoIP/vpn_facebook_audio2.pcap",
+      "capture_id": "ef40538afe08aa6d6d5bf573966af6d5c0304ddf276d1ef634c399186c823d98",
+      "flow_id": "096f188e05a3b1495e35607c5b4c7e2bc7fb6e5bf36cff741cc3a1620eb6f79c",
+      "label": 5,
+      "split": "train",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 9748,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "730e32511640d323ad9e6a67ce8638a7752b9d03bd225940f2850733512c4fa0",
+      "after_sha256": "208f8772a8ec1dd3a064917784c76172c87e5840fd5a08ae9015d2250be6ae2d"
+    },
+    {
+      "capture": "VoIP/vpn_facebook_audio2.pcap",
+      "capture_id": "ef40538afe08aa6d6d5bf573966af6d5c0304ddf276d1ef634c399186c823d98",
+      "flow_id": "096f188e05a3b1495e35607c5b4c7e2bc7fb6e5bf36cff741cc3a1620eb6f79c",
+      "label": 5,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 9761,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 41,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 57,
+          "kind": "authentication",
+          "start": 41
+        }
+      ],
+      "targeted_bytes": 28,
+      "changed_bytes": 28,
+      "before_sha256": "e90ee9c823989c1c93341c326b8a2c9c8f1b150f5b5cd5b16bc02a8cb6c82583",
+      "after_sha256": "525519f010ab65f7cc5916deaeb87131e2d9000ce8f92f3d01d9c1806b7b2154"
+    },
+    {
+      "capture": "VoIP/vpn_facebook_audio2.pcap",
+      "capture_id": "ef40538afe08aa6d6d5bf573966af6d5c0304ddf276d1ef634c399186c823d98",
+      "flow_id": "096f188e05a3b1495e35607c5b4c7e2bc7fb6e5bf36cff741cc3a1620eb6f79c",
+      "label": 5,
+      "split": "train",
+      "packet_index": 14,
+      "payload_ordinal": 7,
+      "frame": 9762,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 29,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 45,
+          "kind": "authentication",
+          "start": 29
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "b5aff425ede02b0b2ba2ec405715e5beb4c0d95247f54461e2cfacea40d38cad",
+      "after_sha256": "d42de1db6af2ea0f4e5aa4936023dc91c255d3c979b9f63bbc50be7968e63972"
+    },
+    {
+      "capture": "VoIP/vpn_hangouts_audio1.pcap",
+      "capture_id": "523ceb26721c02a597f00743125e61257c987b2a4303afebdfce5f6871ebfa58",
+      "flow_id": "000851b90ed84a75ea84151f26be1d72b9110462a73e296f951cd2394b8a180b",
+      "label": 5,
+      "split": "test",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 34730,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 133,
+          "kind": "ciphertext",
+          "start": 117
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 98,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 103,
+          "kind": "framing",
+          "start": 98
+        },
+        {
+          "end": 104,
+          "kind": "framing",
+          "start": 103
+        },
+        {
+          "end": 109,
+          "kind": "framing",
+          "start": 104
+        },
+        {
+          "end": 117,
+          "kind": "framing",
+          "start": 109
+        },
+        {
+          "end": 149,
+          "kind": "authentication",
+          "start": 133
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "18f7abc2baf282865eb59703a9eb7da35e42f4184e8a0f720d5b1d443b454a10",
+      "after_sha256": "09800ba1770364f30ada6648e41d9bd4d4b7441621e3c57c795d9a031b14d8a8"
+    },
+    {
+      "capture": "VoIP/vpn_hangouts_audio1.pcap",
+      "capture_id": "523ceb26721c02a597f00743125e61257c987b2a4303afebdfce5f6871ebfa58",
+      "flow_id": "000851b90ed84a75ea84151f26be1d72b9110462a73e296f951cd2394b8a180b",
+      "label": 5,
+      "split": "test",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 34732,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "46558a8bab4908a7f0ddeb24cf5fbe54dc5c3af9d5b0fe8f02d1eff3045f3c38",
+      "after_sha256": "4e62647df0933229748b0d3e870efc8e30dec0778dd69ee052edb71a13dc1872"
+    },
+    {
+      "capture": "VoIP/vpn_hangouts_audio1.pcap",
+      "capture_id": "523ceb26721c02a597f00743125e61257c987b2a4303afebdfce5f6871ebfa58",
+      "flow_id": "000851b90ed84a75ea84151f26be1d72b9110462a73e296f951cd2394b8a180b",
+      "label": 5,
+      "split": "test",
+      "packet_index": 8,
+      "payload_ordinal": 3,
+      "frame": 34733,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 71,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 87,
+          "kind": "authentication",
+          "start": 71
+        }
+      ],
+      "targeted_bytes": 58,
+      "changed_bytes": 57,
+      "before_sha256": "101f660ace91b1bcc41ad1a963cce5dd4a8e7adf16a8ccb3b03d480daa2f693f",
+      "after_sha256": "ac5ee19b5234b11dc07cb3e6368895d924aa086596540f03c2c9c3cfd5175d7f"
+    },
+    {
+      "capture": "VoIP/vpn_hangouts_audio2.pcap",
+      "capture_id": "28632760a7657a770e61d413c5bfeefa66f7eb686b28a300508068e7fd1340ca",
+      "flow_id": "02ba37c13b43e8d8afc0f34c4ebbd7d651dcbf69ccd9aacbe614dd677556917f",
+      "label": 5,
+      "split": "train",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 128377,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "ac109427e04f6a31fc98bdc8cd3b26432c66431423f0dcd1a9e9edab0f9948b2",
+      "after_sha256": "1e02a73662c4c63db7c2e4b4ab3d74f28d7aac5d4faa31f611b0eede79ad0bfe"
+    },
+    {
+      "capture": "VoIP/vpn_hangouts_audio2.pcap",
+      "capture_id": "28632760a7657a770e61d413c5bfeefa66f7eb686b28a300508068e7fd1340ca",
+      "flow_id": "02ba37c13b43e8d8afc0f34c4ebbd7d651dcbf69ccd9aacbe614dd677556917f",
+      "label": 5,
+      "split": "train",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 128381,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 41,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 57,
+          "kind": "authentication",
+          "start": 41
+        }
+      ],
+      "targeted_bytes": 28,
+      "changed_bytes": 28,
+      "before_sha256": "53f4c6972e689ba816c10b69a9a333b79d2563eb3d8f3c009d02b3b7ad137a69",
+      "after_sha256": "b2b604afe8c5c6e59a349601b44c54a08b46138d44fb164a0bf57fde1d1e8ebb"
+    },
+    {
+      "capture": "VoIP/vpn_hangouts_audio2.pcap",
+      "capture_id": "28632760a7657a770e61d413c5bfeefa66f7eb686b28a300508068e7fd1340ca",
+      "flow_id": "02ba37c13b43e8d8afc0f34c4ebbd7d651dcbf69ccd9aacbe614dd677556917f",
+      "label": 5,
+      "split": "train",
+      "packet_index": 14,
+      "payload_ordinal": 7,
+      "frame": 128382,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 29,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 45,
+          "kind": "authentication",
+          "start": 29
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "9ebc086d3c287a1f79b60d090fea28d8a9a531656b330fc24eb59b4f3f9a4d50",
+      "after_sha256": "7f6f3405317821c5ee1837211fc799fdf6f32866b9894adc9f750bf344c1b1bb"
+    },
+    {
+      "capture": "VoIP/vpn_skype_audio1.pcap",
+      "capture_id": "2b4df5698c0ebe6f37828f13a0417fac4f2a9f94f9ca0f7b651c8513c9496929",
+      "flow_id": "93ba53d5aa36cccdebc99ea14a90d4e576999de22d900705d369c3d362aa76c0",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 5,
+      "payload_ordinal": 1,
+      "frame": 84159,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 133,
+          "kind": "ciphertext",
+          "start": 117
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 98,
+          "kind": "plaintext",
+          "start": 5
+        },
+        {
+          "end": 103,
+          "kind": "framing",
+          "start": 98
+        },
+        {
+          "end": 104,
+          "kind": "framing",
+          "start": 103
+        },
+        {
+          "end": 109,
+          "kind": "framing",
+          "start": 104
+        },
+        {
+          "end": 117,
+          "kind": "framing",
+          "start": 109
+        },
+        {
+          "end": 149,
+          "kind": "authentication",
+          "start": 133
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "4554c8dce51fc2ca12b48afa819654862e391215cb82a89ab071967af1a7472c",
+      "after_sha256": "1a21b6b376d4b741503d9566f9a618993e5ea19a0eb0733ee3df1ea499711676"
+    },
+    {
+      "capture": "VoIP/vpn_skype_audio1.pcap",
+      "capture_id": "2b4df5698c0ebe6f37828f13a0417fac4f2a9f94f9ca0f7b651c8513c9496929",
+      "flow_id": "93ba53d5aa36cccdebc99ea14a90d4e576999de22d900705d369c3d362aa76c0",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 7,
+      "payload_ordinal": 2,
+      "frame": 84162,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 35,
+          "kind": "ciphertext",
+          "start": 19
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 6,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "kind": "framing",
+          "start": 6
+        },
+        {
+          "end": 19,
+          "kind": "framing",
+          "start": 11
+        },
+        {
+          "end": 51,
+          "kind": "authentication",
+          "start": 35
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "c8197d49de5093b4a347d0e770599beb3f4a6187642208be598df9cc9bb892ae",
+      "after_sha256": "b5b93183f063d50717a40b4557e5aa1b16bfa693f9a6162a8a66ce405b071250"
+    },
+    {
+      "capture": "VoIP/vpn_skype_audio1.pcap",
+      "capture_id": "2b4df5698c0ebe6f37828f13a0417fac4f2a9f94f9ca0f7b651c8513c9496929",
+      "flow_id": "93ba53d5aa36cccdebc99ea14a90d4e576999de22d900705d369c3d362aa76c0",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 8,
+      "payload_ordinal": 3,
+      "frame": 84163,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 37,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 53,
+          "kind": "authentication",
+          "start": 37
+        }
+      ],
+      "targeted_bytes": 24,
+      "changed_bytes": 24,
+      "before_sha256": "067ae5f3095330920baadeaea40881066bbaae6bc572096b331fea7c37fcd776",
+      "after_sha256": "105c32337d97c5e5ef39819e738fc6f73f967ce46d4a685d0478864fb7ef5dd4"
+    },
+    {
+      "capture": "VoIP/vpn_skype_audio2.pcap",
+      "capture_id": "a35f936ecc9e1797a61f2b7b6efeb13b02911c78fc76e2ef71eb8df2ddc2503e",
+      "flow_id": "34142a6636b40f0cca4a53fd8930de151dfb1880666f5cca486032bea658892a",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 11,
+      "payload_ordinal": 4,
+      "frame": 108838,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 110,
+          "kind": "ciphertext",
+          "start": 94
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 80,
+          "kind": "framing",
+          "start": 75
+        },
+        {
+          "end": 81,
+          "kind": "framing",
+          "start": 80
+        },
+        {
+          "end": 86,
+          "kind": "framing",
+          "start": 81
+        },
+        {
+          "end": 94,
+          "kind": "framing",
+          "start": 86
+        },
+        {
+          "end": 126,
+          "kind": "authentication",
+          "start": 110
+        }
+      ],
+      "targeted_bytes": 16,
+      "changed_bytes": 16,
+      "before_sha256": "eed014abcd376fb932def7e522c651a56fbf4de3eab76a7835f238996ca1fa1c",
+      "after_sha256": "bb7145d77dd8d5caf1eefdf638ed0aea0deeb99ae60d86a00b3e9f9d8c1aeed5"
+    },
+    {
+      "capture": "VoIP/vpn_skype_audio2.pcap",
+      "capture_id": "a35f936ecc9e1797a61f2b7b6efeb13b02911c78fc76e2ef71eb8df2ddc2503e",
+      "flow_id": "34142a6636b40f0cca4a53fd8930de151dfb1880666f5cca486032bea658892a",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 12,
+      "payload_ordinal": 5,
+      "frame": 108839,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 49,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        },
+        {
+          "end": 65,
+          "kind": "authentication",
+          "start": 49
+        }
+      ],
+      "targeted_bytes": 36,
+      "changed_bytes": 36,
+      "before_sha256": "f40432b93b991cc49b4b14bc2dd0632dacc6fa9216c49ae868e894b2bab08d45",
+      "after_sha256": "416f3a849796963d3a3b12dd861979aee141d7487a7929fd71508b3070a258bc"
+    },
+    {
+      "capture": "VoIP/vpn_skype_audio2.pcap",
+      "capture_id": "a35f936ecc9e1797a61f2b7b6efeb13b02911c78fc76e2ef71eb8df2ddc2503e",
+      "flow_id": "34142a6636b40f0cca4a53fd8930de151dfb1880666f5cca486032bea658892a",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 13,
+      "payload_ordinal": 6,
+      "frame": 108840,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 137,
+      "before_sha256": "5830f06223fb4979db33e1bcbeb021cba433fe43cf74ade9fecdc576db436b63",
+      "after_sha256": "667890fa1281b74572f8bb60b891b0593775ac8c47394fbf9eba0a41eecefb8f"
+    },
+    {
+      "capture": "VoIP/vpn_voipbuster1a.pcap",
+      "capture_id": "e8765d16adefba28752216c90f1f73a1398c73bb4fe9357b74ddd5031c67ac40",
+      "flow_id": "01f0ccbc8494e4d26101f49e2b4a40927e636db35ab470af073e98192b2a177b",
+      "label": 5,
+      "split": "test",
+      "packet_index": 9,
+      "payload_ordinal": 5,
+      "frame": 102226,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 137,
+      "before_sha256": "64655efa2fd8c635ac592d89a99319abaa6a52ccee8b623d7e4cb9cce783dee5",
+      "after_sha256": "e2d52f57a4293e8c45dffcbae3d763ecd28487b11ae35d7908fb686cd9785a4f"
+    },
+    {
+      "capture": "VoIP/vpn_voipbuster1a.pcap",
+      "capture_id": "e8765d16adefba28752216c90f1f73a1398c73bb4fe9357b74ddd5031c67ac40",
+      "flow_id": "01f0ccbc8494e4d26101f49e2b4a40927e636db35ab470af073e98192b2a177b",
+      "label": 5,
+      "split": "test",
+      "packet_index": 10,
+      "payload_ordinal": 6,
+      "frame": 102227,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 0
+        }
+      ],
+      "nearby_preserved_ranges": [],
+      "targeted_bytes": 150,
+      "changed_bytes": 147,
+      "before_sha256": "ba66651eb7b364f95c7125e374d6440a95c1a432631cedcda6a76fafc28380ba",
+      "after_sha256": "15dd05bb0f0bac3d6757608b39c5aace433566661a4a0186c4d3898f6342ce21"
+    },
+    {
+      "capture": "VoIP/vpn_voipbuster1a.pcap",
+      "capture_id": "e8765d16adefba28752216c90f1f73a1398c73bb4fe9357b74ddd5031c67ac40",
+      "flow_id": "01f0ccbc8494e4d26101f49e2b4a40927e636db35ab470af073e98192b2a177b",
+      "label": 5,
+      "split": "test",
+      "packet_index": 11,
+      "payload_ordinal": 7,
+      "frame": 102228,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 0
+        }
+      ],
+      "nearby_preserved_ranges": [],
+      "targeted_bytes": 150,
+      "changed_bytes": 149,
+      "before_sha256": "d7f4be12507ff318fdc9179759b1794252d0319f6de626403e61f95ed697a414",
+      "after_sha256": "4e1878986e52c1f839ffc2458e9ec695568e8d9e7bd8876827e191c70a9e8f2b"
+    },
+    {
+      "capture": "VoIP/vpn_voipbuster1b.pcap",
+      "capture_id": "4c06066bdcd8af4354da7f4da35fb4929b2842fafb3bede16a7e78b27e7e2315",
+      "flow_id": "0b587df94e9bc5e84ee6e50c46d4407496724d80d90632606baaabbbee5d10ba",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 9,
+      "payload_ordinal": 5,
+      "frame": 137509,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 13
+        }
+      ],
+      "nearby_preserved_ranges": [
+        {
+          "end": 5,
+          "kind": "framing",
+          "start": 0
+        },
+        {
+          "end": 13,
+          "kind": "framing",
+          "start": 5
+        }
+      ],
+      "targeted_bytes": 137,
+      "changed_bytes": 136,
+      "before_sha256": "3446807574beda3d3ade9aaad6544f19aac1f03682d71651696c719dbd0c9af7",
+      "after_sha256": "7f909c614cb610ada384d540fa83d2b09629b0bb34b1e2d2a74da6d89afdffd4"
+    },
+    {
+      "capture": "VoIP/vpn_voipbuster1b.pcap",
+      "capture_id": "4c06066bdcd8af4354da7f4da35fb4929b2842fafb3bede16a7e78b27e7e2315",
+      "flow_id": "0b587df94e9bc5e84ee6e50c46d4407496724d80d90632606baaabbbee5d10ba",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 10,
+      "payload_ordinal": 6,
+      "frame": 137510,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 0
+        }
+      ],
+      "nearby_preserved_ranges": [],
+      "targeted_bytes": 150,
+      "changed_bytes": 150,
+      "before_sha256": "28159c86eae2444f637b316d6bc1c1408968cbcd47104b8ed05917e2a6860d0e",
+      "after_sha256": "5e3a06e52d8eaec1f3d2dbc51d2f2ae863a8b4d96bc5cb478f130068ff51aa66"
+    },
+    {
+      "capture": "VoIP/vpn_voipbuster1b.pcap",
+      "capture_id": "4c06066bdcd8af4354da7f4da35fb4929b2842fafb3bede16a7e78b27e7e2315",
+      "flow_id": "0b587df94e9bc5e84ee6e50c46d4407496724d80d90632606baaabbbee5d10ba",
+      "label": 5,
+      "split": "validation",
+      "packet_index": 11,
+      "payload_ordinal": 7,
+      "frame": 137511,
+      "protocol": "TLS1.2_AES_GCM",
+      "ciphertext_ranges": [
+        {
+          "end": 150,
+          "kind": "ciphertext",
+          "start": 0
+        }
+      ],
+      "nearby_preserved_ranges": [],
+      "targeted_bytes": 150,
+      "changed_bytes": 150,
+      "before_sha256": "43cc7a77318815cbbf672dc8ef20a8d70b9e7d5de3102f76243d3d9949cd5c87",
+      "after_sha256": "5fa78da9eadd4490cc0e798bbb0878239e25a6ea99796ee8f153b7375f01e61c"
+    }
+  ],
+  "total_packet_records": 40962,
+  "actual_payload_dumped": false
+}
