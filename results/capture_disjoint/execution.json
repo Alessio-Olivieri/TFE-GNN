@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-07T22:43:03.629859+00:00",
+  "starting_commit": "78e8d89ecd5ad43c650113c79292a751ccd25093",
+  "audit_code_commit": "a43d9f0cb95102feb943c733c8bd400e07037174",
+  "commands": [
+    "nix-shell recovery/audit-shell.nix --run '.venv-recovery/bin/python -m recovery.capture_audit'",
+    "nix-shell recovery/audit-shell.nix --run '.venv-recovery/bin/python -m recovery.capture_audit_report'"
+  ],
+  "new_training_runs": 0,
+  "epochs_completed": 0,
+  "split_seed_requested": 32,
+  "training_seeds_requested": [
+    32,
+    42,
+    52
+  ],
+  "payload_randomization_seed_requested": 32,
+  "ciphertext_randomization_seed_requested": 32,
+  "seeds_applied_to_new_training": false,
+  "transformation_version": null,
+  "capture_manifest_version": "capture-audit-v2-conservative-session-links",
+  "software": {
+    "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [GCC 15.2.0]",
+    "numpy": "1.26.4",
+    "torch": "2.7.1",
+    "torch-geometric": "2.6.1",
+    "scikit-learn": "1.6.1",
+    "psutil": "7.0.0"
+  },
+  "tshark_version": "TShark (Wireshark) 4.6.6 (Git commit 3a22c3ef473d).",
+  "source_sha256": {
+    "recovery/audit.py": "5985fde6ede85132863fb3cc4441bd3634c97a2682bd4ac459031c58697c8f82",
+    "recovery/capture_audit.py": "b5971cd0fa3e2a5e0a9cf10d2f82b2eab4d32abaced87c43fd9be45da8509d09",
+    "recovery/capture_audit_report.py": "1c189eb485d9c083ca7f0094f4d6dff9ae491c60a973bb6d0b24550bfa3906f6",
+    "recovery/data.py": "1ba0e9a052613fb0ba6d55df29b7c267d2844e0616864d265f24883662cf8a69",
+    "recovery/model.py": "180e06932d7f1d3db461280eb5fbb8c4c3008bb25a2ff038ab36fc419d34c19b",
+    "recovery/multiseed.py": "db0ca3458150da5a8ff1f31b50213ecc8343bdc35f047f1b3659b41bf956de33",
+    "recovery/resources.py": "cd54d7be0d854cfae90bdf5d2a69acbb58eb9ea3aa409dd6360807ef99396392",
+    "recovery/run.py": "4dc384fdd9a88684b014687d7e71db95fbb318422798ef89d1f0cc0e576d578d",
+    "recovery/summarize.py": "e160fcd26521399af98c561a95a1f161db0c525301058bbf61cae1b8f82316ca",
+    "recovery/test_capture_audit.py": "264c87d04e339d73612c889c3ab49881b8b93161b459dab39d9df181b44b70c7",
+    "recovery/test_recovery.py": "a1e83c3c34805d97272078cfab1e5dac33d0518ada048935a69498a911562b22",
+    "recovery/validate_capture.py": "d1a77fd6180d1e0dd86dafb1836b28868881acae371c77088f3206042004c0e4",
+    "recovery/validate_capture_audit.py": "65c051a8fa2d144f2e4b526be736f9ea42b8ac24d61f9c2ec7343ac6be6b28f8"
+  },
+  "policy": "STOP before six-class training; no test set, checkpoints, metrics or paired comparisons created"
+}

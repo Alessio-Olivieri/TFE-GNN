@@ -1,0 +1,1062 @@
+{
+  "links": [
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "018b23c4d0805411d6371160d914a14b40b95d8497bbd302308a0d1d67ca0fe2",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "95ae5dc654a4da8ce8f5acfe59ed0ea30ef99681e6c1005580f1da8220dc00fa",
+        "97af6facf2ee8752b4cce016ccfb68210c7c3af99d3afc70bf955b91454eb37e"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042370.085343,
+          "last": 1429042487.495374
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042306.540866,
+          "last": 1429042311.929438
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "095722403c7f971685cd6535a06186eac80bf4deec377b7673dd27ab39ce3746",
+      "source_captures": [
+        "FileTransfer/vpn_ftps_A.pcap",
+        "FileTransfer/vpn_ftps_B.pcap"
+      ],
+      "source_sample_ids": [
+        "df19c3acce08cc1a6cf9556307c989f88ef41ee802c24c7cb3394ee571930ea2",
+        "ef2c99246764da934c9525fa4600c30e14dbeb755fb46c4a870b8f799797d939"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_ftps_A.pcap",
+          "first": 1432323888.836036,
+          "last": 1432323980.169037
+        },
+        {
+          "capture": "FileTransfer/vpn_ftps_B.pcap",
+          "first": 1432324025.166579,
+          "last": 1432324129.710976
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "0fa328854bd9e05e754f22c194b227e0c6333914be43044856ebad9419dbc75b",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "a80095514e825ba4a5bd7d608668e5d4a71b910648545601e2e08923ffdcf66a",
+        "edff28a740595de1594a11fa3235bf84623359356651e180a27d643f6bb6968f"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042371.0864248,
+          "last": 1429042488.508375
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042300.829711,
+          "last": 1429042313.125268
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "115b96fed069f78bcee4593ea669ce60140adeddc9c4101e90838cb7ab01f3a0",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "7bdd8f99ebaf6ed0436d07cce2e8b12a53fd0e7d034ea6358d90826cd5b12614",
+        "ef0c4f0eba27a50be3d4680a9dd994c1149ca6a7f74f9f4e7351718e3b07788c"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042372.0323448,
+          "last": 1429042655.5205119
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042303.623001,
+          "last": 1429042315.247538
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "167454bb0e1736d8d53ccc3a381f4b5df545048f7fd66ca274433b1864f6237e",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "3ad035631369af18aa5050fa5d719d9c417af347ef0caa1171575bc41d6db11c",
+        "40dfd1dfce615e51a83e412bd7a2936cfaea13adf1fa94ef226feb9c1e1edc2c"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042303.558921,
+          "last": 1429042320.193465
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042371.048354,
+          "last": 1429042578.513687
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "39b6a7d8b55636191a14ed3d4ea48faf53963ce66627d52c33495a47163a793b",
+      "source_captures": [
+        "Chat/vpn_aim_chat1a.pcap",
+        "Chat/vpn_facebook_chat1a.pcap",
+        "Chat/vpn_hangouts_chat1a.pcap",
+        "Chat/vpn_icq_chat1a.pcap",
+        "Chat/vpn_skype_chat1a.pcap"
+      ],
+      "source_sample_ids": [
+        "3b3ff7c488bfdebe056ed696fbad335a9c6514338423d1b5ab6e211a24764707",
+        "61d422d59f715392934dbf60f27b88a7ee9abfaf644b4cdd53089b64f74c2500",
+        "7092a3e3bdd8c1d2246206e1b97a56aa39d5b85e6c0ce2335dda28af0c84b79d",
+        "88f7a189ef04a3ded4f3b66ba065fa97ce6e37bf51afbcb33d35957d44e4a461",
+        "9b3f5bbab60cdb39d61915334eef1034d6af43b12d93ab7ad1dc3a6e2aaebabf"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Chat/vpn_aim_chat1a.pcap",
+          "first": 1433356869.782563,
+          "last": 1433357851.59179
+        },
+        {
+          "capture": "Chat/vpn_icq_chat1a.pcap",
+          "first": 1433358090.40158,
+          "last": 1433359352.364019
+        },
+        {
+          "capture": "Chat/vpn_facebook_chat1a.pcap",
+          "first": 1433354250.724168,
+          "last": 1433355304.370376
+        },
+        {
+          "capture": "Chat/vpn_hangouts_chat1a.pcap",
+          "first": 1433361183.907532,
+          "last": 1433362052.14556
+        },
+        {
+          "capture": "Chat/vpn_skype_chat1a.pcap",
+          "first": 1433352691.099352,
+          "last": 1433353652.078183
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "412bc9ad65e9d97f50a196f6bc8000246e5908d480722388cdba2831f9e5272d",
+      "source_captures": [
+        "Streaming/vpn_netflix_A.pcap",
+        "Streaming/vpn_spotify_A.pcap",
+        "Streaming/vpn_vimeo_A.pcap",
+        "Streaming/vpn_vimeo_B.pcap",
+        "Streaming/vpn_youtube_A.pcap"
+      ],
+      "source_sample_ids": [
+        "03860b02524b886031d31aa51bb33fe7d43862d3df7327e90d8a04d520420b37",
+        "15e23bac643ba07aee9e32d72c4f389b067429791f07decbf3fe08fd76980c8b",
+        "a6e1a0686568169913eaf5f894f1b521e10750ecc21a946616da4b1448efa996",
+        "c5d62bdbac2754c2064ee1dd7de817cb77e62e907fbca9234da567d1716111e4",
+        "e7282d853df8343ac6650662e46dbd3fe2409499220a3e61f3ebb6a78816295f"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Streaming/vpn_vimeo_A.pcap",
+          "first": 1432489719.054605,
+          "last": 1432491022.372775
+        },
+        {
+          "capture": "Streaming/vpn_youtube_A.pcap",
+          "first": 1432492374.414646,
+          "last": 1432495005.581795
+        },
+        {
+          "capture": "Streaming/vpn_vimeo_B.pcap",
+          "first": 1432491338.658635,
+          "last": 1432492238.986196
+        },
+        {
+          "capture": "Streaming/vpn_spotify_A.pcap",
+          "first": 1432482097.89468,
+          "last": 1432485937.425095
+        },
+        {
+          "capture": "Streaming/vpn_netflix_A.pcap",
+          "first": 1432487018.378626,
+          "last": 1432488773.91705
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "5204b72c58f8393090e5ff3df5ba991ac753338a618a33770fa0a737c30b095c",
+      "source_captures": [
+        "FileTransfer/vpn_sftp_A.pcap",
+        "FileTransfer/vpn_sftp_B.pcap"
+      ],
+      "source_sample_ids": [
+        "8ea403ff182b6fd501ebf9df29a0fd429a0cea7e80eed6cfe06d958365c7b958",
+        "ccf118316c3b9b266c738b6a83c8275d69422d47e55569b241df23937880de26"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_sftp_A.pcap",
+          "first": 1432322668.352172,
+          "last": 1432322804.884047
+        },
+        {
+          "capture": "FileTransfer/vpn_sftp_B.pcap",
+          "first": 1432322849.882518,
+          "last": 1432322909.187787
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "565ed12c8f23655faa66e3e9797ff9a21930187802fcb55e4f14716c44422ddf",
+      "source_captures": [
+        "Chat/vpn_aim_chat1a.pcap",
+        "Chat/vpn_facebook_chat1a.pcap",
+        "Chat/vpn_hangouts_chat1a.pcap",
+        "Chat/vpn_icq_chat1a.pcap",
+        "Chat/vpn_skype_chat1a.pcap"
+      ],
+      "source_sample_ids": [
+        "0cc452ffb49d7023612bc334cad4ce5780a5c8b7c8d923765b9db91ee9d9a530",
+        "69d501c82913bad199746e6f7606b23389e9644187ff386b555555c42c57c762",
+        "7edb910a20b1210937b1311f70ebaf3d39397b4f575f309804dcb4a5b74c75ac",
+        "c3e466c77ddf3ae1e1dc6d490b3bceceb470f1515862c2119e8ee557f8b5fb0d",
+        "d9cc732455016bc30c1913d87a67a73c387ef25e56444592a55118c94c9181ca"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Chat/vpn_facebook_chat1a.pcap",
+          "first": 1433354310.753029,
+          "last": 1433354851.270291
+        },
+        {
+          "capture": "Chat/vpn_hangouts_chat1a.pcap",
+          "first": 1433361330.660563,
+          "last": 1433361871.20843
+        },
+        {
+          "capture": "Chat/vpn_skype_chat1a.pcap",
+          "first": 1433352691.098692,
+          "last": 1433353231.610503
+        },
+        {
+          "capture": "Chat/vpn_icq_chat1a.pcap",
+          "first": 1433358090.400869,
+          "last": 1433359171.171437
+        },
+        {
+          "capture": "Chat/vpn_aim_chat1a.pcap",
+          "first": 1433357010.988095,
+          "last": 1433357551.530719
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "5e242e306231f6518d32fc90b1452c2f43cd5530664df3b9a769a7e2c406e929",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap",
+        "VoIP/vpn_skype_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "0d7aa2ee31274eb33c5fdd362c5c4860f269ed596a82e2d359fcd16e5ff9c2ef",
+        "1b51d69f806d46c5dfee0cbabac85f2372981a56116e8a6a66753feeeee089f6",
+        "9523506ebac5e8d879d9d851d92493e0129819767866c9b3ae28d8af3ba41d0c"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_skype_audio2.pcap",
+          "first": 1429038034.055679,
+          "last": 1429038035.046828
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042355.0828218,
+          "last": 1429042476.876369
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429038183.230311,
+          "last": 1429042299.36535
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "6dc7146fd8599b190414598ab28e804a4a6636f9d4a78f99043d4bd467e02b3e",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "096f188e05a3b1495e35607c5b4c7e2bc7fb6e5bf36cff741cc3a1620eb6f79c",
+        "8aa616d8fe18120d37f29d6ab2166515dd7f72be6983bf0f3076fe86079ea1b2"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042299.291791,
+          "last": 1429042319.167449
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042377.996687,
+          "last": 1429042551.515095
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "70de817d42ff81b95817844e3ec965039dee04e5a5743bc164c79d7dec5036bb",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "2d49265cf806a87b05b83f2e525ee4666bbe58089f96ca3923de645b18fa2a91",
+        "42098e34a1d4e87f91dd8057371d411d1b7a901fe2fb44357b2c2d9710e3d45f"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042361.0836298,
+          "last": 1429042478.7308738
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042301.954989,
+          "last": 1429042302.193394
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "7e8eafa1fa50899c42d81b320dd5cf1fd387ca6be90d142710bf45365f0cefc0",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "1af5d705d1dff953f2ef48236e03dc3c5da5bfb60315fce4ae4b17471213e5e6",
+        "c32ea9d31c8ce974ca1f33c427c3a148365a73a7050ec3a908893cb04364cb67"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042301.043956,
+          "last": 1429042301.321314
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042360.0835168,
+          "last": 1429042552.509359
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "800ce16ee6141c561ee8ebbad963503f3cf95b6b84103a2f0d0054533ad23847",
+      "source_captures": [
+        "Streaming/vpn_vimeo_A.pcap",
+        "Streaming/vpn_vimeo_B.pcap",
+        "Streaming/vpn_youtube_A.pcap"
+      ],
+      "source_sample_ids": [
+        "176b65d57af508dfb1c5d5ee9697ac7b5a55ff7433254629665060d53b11757b",
+        "6651ab08b033c49e1aec60421ccb1820366b1aa8092bc484a29213eb41e3f44b",
+        "eb2681624da4a06360add87e218ad9c4c16c7eefbb5f81f072e788cee377d9c8"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Streaming/vpn_youtube_A.pcap",
+          "first": 1432492362.059626,
+          "last": 1432494998.718042
+        },
+        {
+          "capture": "Streaming/vpn_vimeo_B.pcap",
+          "first": 1432491315.827152,
+          "last": 1432492218.088943
+        },
+        {
+          "capture": "Streaming/vpn_vimeo_A.pcap",
+          "first": 1432490748.481277,
+          "last": 1432491000.726587
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "8a18b4c015f10f556b3578fa92d7f519ef6f35fd7d52c951ea8efc2e8fec43f7",
+      "source_captures": [
+        "FileTransfer/vpn_ftps_A.pcap",
+        "FileTransfer/vpn_ftps_B.pcap"
+      ],
+      "source_sample_ids": [
+        "96362f07a0d26c4abbe2ed60b51972643c802321a4c16996dd05521a540965ed",
+        "f66fdad540b295500f8778a9e010fa90f26b3a0d0347ecc4837b901391ab6354"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_ftps_A.pcap",
+          "first": 1432323892.148715,
+          "last": 1432323983.462406
+        },
+        {
+          "capture": "FileTransfer/vpn_ftps_B.pcap",
+          "first": 1432324028.458548,
+          "last": 1432324133.021611
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "8a78e932a876f3a680d71e84789d59ece25f22902fdbf67628ad3195147ad9bc",
+      "source_captures": [
+        "Chat/vpn_aim_chat1b.pcap",
+        "Chat/vpn_icq_chat1b.pcap"
+      ],
+      "source_sample_ids": [
+        "00c3024abbc5d6dd1489ed03f11f9ad504afebb0b3c40157b00c2c67870f1b56",
+        "1d8f12cfdec4406004cd5808a89ee1539ce0208dfa2dee11a17ada9ae035c45a"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Chat/vpn_aim_chat1b.pcap",
+          "first": 1433356831.535935,
+          "last": 1433357821.709347
+        },
+        {
+          "capture": "Chat/vpn_icq_chat1b.pcap",
+          "first": 1433358054.865487,
+          "last": 1433359391.045216
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "8c9a527bd3724d9d81267549e931e25f9fe470c67c6f74a28b9d63996b579620",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "50b71e3aeeda473d27d7208e9f49e2b6471e9820c3b213c2d2960a478bdf5129",
+        "ccecfa48a1ccdfd54dd79d727530d8c2a4a1628e48de426ee25853ce19466aba"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042364.151502,
+          "last": 1429042553.509724
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042302.631565,
+          "last": 1429042306.652263
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "956a2067ef82a6ac34a9871d524b7278720f54f77b5375ffb1b7ccfe0993144a",
+      "source_captures": [
+        "FileTransfer/vpn_ftps_A.pcap",
+        "FileTransfer/vpn_ftps_B.pcap"
+      ],
+      "source_sample_ids": [
+        "0b5563b7fd1c212b118841b5450a1cadd49dfaf90d2ca8becbd5af9613f85d22",
+        "bccef22ef2cc30eef4bbc30672762017dcb94bd613ffd468153a26bbce1f6189"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_ftps_A.pcap",
+          "first": 1432323908.284199,
+          "last": 1432323954.399855
+        },
+        {
+          "capture": "FileTransfer/vpn_ftps_B.pcap",
+          "first": 1432323999.39858,
+          "last": 1432324149.160274
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "97c592429b5a2ef83ac16c3c61bd0183669317ea69a7a0adbea44619209c8151",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "1b36ad1bff21235ec4126cf416e00595760a77a097b1ce7a9a2eb4e4686dbb7d",
+        "d9989652d4adb02ba0a87c84a90beb5e4331021645eedcbcd391f9f095e0b80c"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042362.083735,
+          "last": 1429042479.7375948
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042302.928453,
+          "last": 1429042303.841424
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "99a7f3e58c082ecad73fb3eaa53e80cf029f469009dad39111e3c2984920fb39",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "96b3c3f0c47c367fc174556d8c6d260b9e321cce4e9356004f86cc12741409e0",
+        "de193f25c2dffcda141402953a6f5d9caf2cedcf7be882c5cbbc4941ab93f4da"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042302.631633,
+          "last": 1429042302.990506
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042361.083706,
+          "last": 1429042478.736286
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "9c853a5887cb6f7117a28293c2c44e949ff5905cfb7bc44d904fbee6d01d2fc2",
+      "source_captures": [
+        "Streaming/vpn_netflix_A.pcap",
+        "Streaming/vpn_vimeo_A.pcap"
+      ],
+      "source_sample_ids": [
+        "9e5d220d17daf3ed8c94f66587a21ec297c460703e4397ac9841bd4c3d188562",
+        "b1faf874287b541068798441666fe8fd0fa0fc2f11295d21779cd757110dd890"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Streaming/vpn_netflix_A.pcap",
+          "first": 1432487012.716631,
+          "last": 1432488756.451263
+        },
+        {
+          "capture": "Streaming/vpn_vimeo_A.pcap",
+          "first": 1432489713.548451,
+          "last": 1432490748.322535
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "9cbfeb9fe32b5c1dc39b7cf0407f1c6c7131e543d746d38ecd7a428cd4134332",
+      "source_captures": [
+        "FileTransfer/vpn_sftp_A.pcap",
+        "FileTransfer/vpn_sftp_B.pcap"
+      ],
+      "source_sample_ids": [
+        "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+        "4ff65e5baf673a7826351a539458b03990147d4c19f9324d49bebc55eabb8826"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_sftp_A.pcap",
+          "first": 1432322590.010254,
+          "last": 1432322817.043718
+        },
+        {
+          "capture": "FileTransfer/vpn_sftp_B.pcap",
+          "first": 1432322830.726692,
+          "last": 1432322830.931914
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "9eb3578d0b0c6828a6ed43e838cb2890f75787c993ca0bb136adefbdd71dc75f",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "7f91a89697bb9efa2d2f51dea257236504a54abb2ec733e896993beeb3efb50c",
+        "ed15b072bb975788a60ad4ca1f39e2e46e2d3d2f9007aee9aa18b9e1b893706b"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042302.920297,
+          "last": 1429042320.313313
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042371.116096,
+          "last": 1429043362.6623769
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "a7b28e0f211fdc1b01cf1f4856e521562f3a3db94050c30874555aacb7e69054",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "22d864651947ed608eebda37f379980099be62048fbdbc75df0b5eaba8907593",
+        "8fa507899be5a1f737e700a29ff29b46bb3c39dcd1897f980a16cbc2c5bb57f5"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042301.588726,
+          "last": 1429042320.267446
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042375.15021,
+          "last": 1429043362.662211
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "ae281215800ab233af8f7c270a0e071154ee4a9c26a89184dc371468d0ccc9a6",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "295f20925256ecf308943b705b079c2455c8d700acb80c464eff44cd77fd4d4a",
+        "7ed78a76c3485c06014a76b5dffa7b8cf31b77f71b860493b464e083e6a15708"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042376.588487,
+          "last": 1429042664.658923
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042306.789631,
+          "last": 1429042325.463014
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "b44c7dc0efbcfda87d566488139b870f1d20fc404929f87b58e2f8acd31dbe5e",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "32667df039a543710ab692d0f6227bdf03618260a28f677cfd80d1d55fbb7dcd",
+        "484f28384f741ca09d84f738fefa861446b9862994d17ff926a64de7a6a22122"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042303.006432,
+          "last": 1429042303.274147
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042362.083793,
+          "last": 1429042479.732487
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "c6bdadd3451acc99312695de2c78afb8f21223d207b02f6983c691f51548a055",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "3922401e8cf504f4cb8a946d431b10d87bff2a5b375edbe68b7f152ae90e9f18",
+        "d0919aa9b8a91520ef79349584b416cde14a5911fd0fda630c1f5c0a265dcd7c"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042301.544308,
+          "last": 1429042314.137542
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042373.0876029,
+          "last": 1429042490.497444
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "ce2371d3a3e3810636618e13c0aaf3fb64ca1a6b2d0f8b837bcd3ad6a24f1d4a",
+      "source_captures": [
+        "FileTransfer/vpn_sftp_A.pcap",
+        "FileTransfer/vpn_sftp_B.pcap"
+      ],
+      "source_sample_ids": [
+        "5bd3ec2518cb4b45096627489ef77febeb14ba91bac16be85ec64547488a5025",
+        "db00f7c8902f0a7eb1497a6cb7cf80406c9e3b4e11d293597b7f67b19fef7218"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_sftp_A.pcap",
+          "first": 1432322495.002894,
+          "last": 1432322498.226572
+        },
+        {
+          "capture": "FileTransfer/vpn_sftp_B.pcap",
+          "first": 1432323023.456749,
+          "last": 1432323030.810563
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "d2da41e928c4afa77315ef957ee9693049cd3326e99347697a82567ab40b7a21",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "3d8d17d397cc861ebfb70910d5b62d7227c25137aa6bef53dcfbd63e9659f615",
+        "3e4be1fe2e75f8c5ab17845c9aa43a88bd327325fdd63496d66bfebfc5f01de5"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042303.614858,
+          "last": 1429042320.02902
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042363.859159,
+          "last": 1429043362.677276
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "dc205946297efd0685bbc52c2fb900a44b2020e201bd01b5a7d0d7d88fc62b10",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "8c9d99e36e95190f968210980d8ac739ff5cfef6fa5b1aa4af999dd71a35ba86",
+        "fcc9259810790a1bc9f7ce32b591710f6bdf5043e56cc894c6b11aa7d95b13a2"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042320.082068,
+          "last": 1429042320.367523
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042375.769949,
+          "last": 1429042558.511605
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "e532c5cac660bca61621a28bd08b2e693bd5b4abdcd2b76b98b8ad2bac77308d",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_skype_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "1df3d8ac9a37623aed8e889f6429401f94ded596598efa2371380bac89dfa269",
+        "ae504feece73abd96a60724a2d6ddb83d1230fb7c62b5868e2f4d106795ccb80"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429038227.894618,
+          "last": 1429038227.946291
+        },
+        {
+          "capture": "VoIP/vpn_skype_audio2.pcap",
+          "first": 1429037988.319061,
+          "last": 1429037988.604793
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "e9bce41df2edaaaecdf347a3be7824a8fe36aae4b30eb15c5cf9810d2f734880",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "b4b1cf472a6f31a7febde5a20ba026d035492b363515dcb7f456ca7db26105b7",
+        "ec3ff4a06f27e783091b95188e589c08ed2a21f34c94027ce91043e85398e45e"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042306.286552,
+          "last": 1429042312.067312
+        },
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042370.085533,
+          "last": 1429042487.5034568
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "ed29b7b5c8ab5bd2822e6daa74e9c22b41ba5125e21a24eba99fc434ad679eee",
+      "source_captures": [
+        "FileTransfer/vpn_ftps_A.pcap",
+        "FileTransfer/vpn_ftps_B.pcap"
+      ],
+      "source_sample_ids": [
+        "6a8e1f5ecbea98b91f824274c7b8f77d238847321b3c96667e714492ffea133f",
+        "93b68bb0743ffcd16f4ac47b9f1bcbf71e5c4f6ef2c871638d563cb279f48ead"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_ftps_A.pcap",
+          "first": 1432323907.834754,
+          "last": 1432323954.005453
+        },
+        {
+          "capture": "FileTransfer/vpn_ftps_B.pcap",
+          "first": 1432323999.002581,
+          "last": 1432324148.742402
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "ef7bce68cd3ac33aadd264872af2613f346308004f85ab2f90632c1403aee642",
+      "source_captures": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "47b14cda0a253f009af3ca4b567b37af66db49c5972f84658e4cf373522e9779",
+        "645c3bcf9a8fa8e7f658c0eaa215fe4f664a6a0207549cc39f9d50d5c8600dfc"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_hangouts_audio2.pcap",
+          "first": 1429042370.085645,
+          "last": 1429042487.503393
+        },
+        {
+          "capture": "VoIP/vpn_facebook_audio2.pcap",
+          "first": 1429042311.858465,
+          "last": 1429042312.063099
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "f1f59772b4fe5a13d0c0020badf817c397a8cdf4512bd03f6e36973bbecf3a92",
+      "source_captures": [
+        "Streaming/vpn_vimeo_A.pcap",
+        "Streaming/vpn_vimeo_B.pcap",
+        "Streaming/vpn_youtube_A.pcap"
+      ],
+      "source_sample_ids": [
+        "63bc0e406fdd8cef7dec6c5e56ab32b10cfe7e1661a4201c6a5c5768674986ba",
+        "8e43534eb3a95d4f51807ad62ab9a4c36b5ee979b30af804ff796ed89e8fd004",
+        "cf52b4cebe390aec35cf9c55949c5b92159d2ba3af2eecb2514b1a9ea317d8c2"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Streaming/vpn_youtube_A.pcap",
+          "first": 1432492381.846676,
+          "last": 1432492524.567115
+        },
+        {
+          "capture": "Streaming/vpn_vimeo_B.pcap",
+          "first": 1432491300.188315,
+          "last": 1432492201.148446
+        },
+        {
+          "capture": "Streaming/vpn_vimeo_A.pcap",
+          "first": 1432489709.009538,
+          "last": 1432491042.705122
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "f528e24395470a59ed95a3c00011cd896fe1bcf6143149ad863d305992c02241",
+      "source_captures": [
+        "VoIP/vpn_skype_audio1.pcap",
+        "VoIP/vpn_skype_audio2.pcap"
+      ],
+      "source_sample_ids": [
+        "a83b3fbc46c800f0f94d553c7355f6109af8e2b7bb5051e3b1ae0a0721557fcc",
+        "d124b29bf75ac3973bd3d3f79ba4b37b2a2e62c5f14161f148dcad19dbb340ac"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "VoIP/vpn_skype_audio2.pcap",
+          "first": 1429034106.122401,
+          "last": 1429037973.58294
+        },
+        {
+          "capture": "VoIP/vpn_skype_audio1.pcap",
+          "first": 1429034142.417995,
+          "last": 1429037965.966759
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "fb5e7bbbad2b5ded9dd2550263cb7bbc3a68cf4790f62e00a7f261d7878a96fb",
+      "source_captures": [
+        "FileTransfer/vpn_ftps_A.pcap",
+        "FileTransfer/vpn_ftps_B.pcap"
+      ],
+      "source_sample_ids": [
+        "16f8f3dd0dcca827a2e3ca84ab2943cb91c0210e98c875bb699fa4c15412d922",
+        "3d0ab3eaf7c765d9714704447c66c993b5d8e7951e52cb426d520c4fe6886c40"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "FileTransfer/vpn_ftps_B.pcap",
+          "first": 1432323993.926589,
+          "last": 1432324121.398362
+        },
+        {
+          "capture": "FileTransfer/vpn_ftps_A.pcap",
+          "first": 1432323851.930327,
+          "last": 1432323982.157031
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    },
+    {
+      "evidence_key": "tuple_hash",
+      "digest": "fbc5a2cf82b9649d672f5e8bc179fa803f8e27b6e069149554a687bbfc25f475",
+      "source_captures": [
+        "Chat/vpn_aim_chat1a.pcap",
+        "Chat/vpn_facebook_chat1a.pcap",
+        "Chat/vpn_hangouts_chat1a.pcap",
+        "Chat/vpn_icq_chat1a.pcap",
+        "Chat/vpn_skype_chat1a.pcap"
+      ],
+      "source_sample_ids": [
+        "0224e9b62ab11a511c1109d53f48a3d5f04fd33acc07da986ced88a72d05e682",
+        "12a6f6a06a47f95f6435d2b3c9109d33888ea43b775b5d4635951bafa43f3a50",
+        "49cd249865a41cda5a27cf308125eccff662b43f7e65c4dce3d5510bf7a8022c",
+        "5f68cd54518a9e8446d34e8897e7651d12df76dc3074983d4ae075c0a792855e",
+        "af2e8b784caffac03ad43a7d362a7121fe6247f4e652af0d162c6d3e34a7d9a9"
+      ],
+      "source_flow_intervals": [
+        {
+          "capture": "Chat/vpn_facebook_chat1a.pcap",
+          "first": 1433354311.494635,
+          "last": 1433355271.590508
+        },
+        {
+          "capture": "Chat/vpn_aim_chat1a.pcap",
+          "first": 1433356831.775501,
+          "last": 1433357791.910083
+        },
+        {
+          "capture": "Chat/vpn_hangouts_chat1a.pcap",
+          "first": 1433361150.535244,
+          "last": 1433361991.540314
+        },
+        {
+          "capture": "Chat/vpn_skype_chat1a.pcap",
+          "first": 1433352714.734967,
+          "last": 1433353670.247218
+        },
+        {
+          "capture": "Chat/vpn_icq_chat1a.pcap",
+          "first": 1433358150.443493,
+          "last": 1433359351.161103
+        }
+      ],
+      "interpretation": "Conservative related-flow link, not proof of identical acquisition. TCP tuple reuse may be persistent connections or port reuse."
+    }
+  ],
+  "semantics": "Conservative union of source groups, not acquisition-independence certification",
+  "initial_groups": 18,
+  "effective_groups": 9
+}

@@ -1,0 +1,53 @@
+{
+  "protocol": "STOP",
+  "reason": "Fewer than two candidate acquisition groups for: Chat, Email, P2P, Streaming",
+  "groups_by_class": {
+    "Chat": [
+      "Chat/linked-c257653d273a"
+    ],
+    "Email": [
+      "Email/vpn_email2"
+    ],
+    "FileTransfer": [
+      "FileTransfer/vpn_ftps",
+      "FileTransfer/vpn_sftp",
+      "FileTransfer/vpn_skype_files1"
+    ],
+    "P2P": [
+      "P2P/vpn_bittorrent"
+    ],
+    "Streaming": [
+      "Streaming/linked-344af536ded1"
+    ],
+    "VoIP": [
+      "VoIP/linked-99e47ec66892",
+      "VoIP/vpn_voipbuster1"
+    ]
+  },
+  "group_counts": {
+    "Chat": 1,
+    "Email": 1,
+    "FileTransfer": 3,
+    "P2P": 1,
+    "Streaming": 1,
+    "VoIP": 2
+  },
+  "blocking_classes": {
+    "Chat": [
+      "Chat/linked-c257653d273a"
+    ],
+    "Email": [
+      "Email/vpn_email2"
+    ],
+    "P2P": [
+      "P2P/vpn_bittorrent"
+    ],
+    "Streaming": [
+      "Streaming/linked-344af536ded1"
+    ]
+  },
+  "genuine_independence_certified": false,
+  "split_seed": 32,
+  "training_permitted": false,
+  "split_or_fold_manifest_created": false
+}

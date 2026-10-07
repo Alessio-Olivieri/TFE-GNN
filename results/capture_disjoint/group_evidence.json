@@ -1,0 +1,555 @@
+{
+  "groups": [
+    {
+      "capture_group_id": "Chat/linked-c257653d273a",
+      "members": [
+        "Chat/vpn_aim_chat1a.pcap",
+        "Chat/vpn_aim_chat1b.pcap",
+        "Chat/vpn_facebook_chat1a.pcap",
+        "Chat/vpn_facebook_chat1b.pcap",
+        "Chat/vpn_hangouts_chat1a.pcap",
+        "Chat/vpn_hangouts_chat1b.pcap",
+        "Chat/vpn_icq_chat1a.pcap",
+        "Chat/vpn_icq_chat1b.pcap",
+        "Chat/vpn_skype_chat1a.pcap",
+        "Chat/vpn_skype_chat1b.pcap"
+      ],
+      "usable_samples": 183,
+      "relationships": [
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_aim_chat1b.pcap",
+          "overlap_seconds": 1025.0617508888245,
+          "gap_seconds": 0
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_facebook_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1517.4691739082336
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_facebook_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1551.801654100418
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_hangouts_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3269.3650381565094
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_hangouts_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3266.962567090988
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 204.18764400482178
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 203.27369713783264
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3151.59233212471
+        },
+        {
+          "a": "Chat/vpn_aim_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3159.4891259670258
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_facebook_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1517.2576599121094
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_facebook_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1551.5901401042938
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_hangouts_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3274.0555272102356
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_hangouts_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3271.6530561447144
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_icq_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 208.87813305854797
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 207.96418619155884
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3151.380818128586
+        },
+        {
+          "a": "Chat/vpn_aim_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3159.2776119709015
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_facebook_chat1b.pcap",
+          "overlap_seconds": 1046.3425929546356,
+          "gap_seconds": 0
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_hangouts_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 5816.586452007294
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_hangouts_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 5814.1839809417725
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 2751.409057855606
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 2750.495110988617
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 553.1467890739441
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 561.0435829162598
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1b.pcap",
+          "b": "Chat/vpn_hangouts_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 5850.918932199478
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1b.pcap",
+          "b": "Chat/vpn_hangouts_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 5848.516461133957
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1b.pcap",
+          "b": "Chat/vpn_icq_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 2785.7415380477905
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1b.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 2784.8275911808014
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 553.4480850696564
+        },
+        {
+          "a": "Chat/vpn_facebook_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 561.344878911972
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1a.pcap",
+          "b": "Chat/vpn_hangouts_chat1b.pcap",
+          "overlap_seconds": 935.4065248966217,
+          "gap_seconds": 0
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1730.0498220920563
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1729.911612033844
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 7450.70961022377
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 7458.606404066086
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1b.pcap",
+          "b": "Chat/vpn_icq_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1727.647351026535
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1b.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1727.5091409683228
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 7448.307139158249
+        },
+        {
+          "a": "Chat/vpn_hangouts_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 7456.203933000565
+        },
+        {
+          "a": "Chat/vpn_icq_chat1a.pcap",
+          "b": "Chat/vpn_icq_chat1b.pcap",
+          "overlap_seconds": 1335.1275720596313,
+          "gap_seconds": 0
+        },
+        {
+          "a": "Chat/vpn_icq_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4385.5322160720825
+        },
+        {
+          "a": "Chat/vpn_icq_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4393.429009914398
+        },
+        {
+          "a": "Chat/vpn_icq_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1a.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4384.618269205093
+        },
+        {
+          "a": "Chat/vpn_icq_chat1b.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4392.515063047409
+        },
+        {
+          "a": "Chat/vpn_skype_chat1a.pcap",
+          "b": "Chat/vpn_skype_chat1b.pcap",
+          "overlap_seconds": 978.9015481472015,
+          "gap_seconds": 0
+        }
+      ],
+      "evidence": "Related activity groups linked transitively by shared canonical TCP endpoint tuples or identical model input. Conservatively keep together; endpoint reuse does not prove independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "Email/vpn_email2",
+      "members": [
+        "Email/vpn_email2a.pcap",
+        "Email/vpn_email2b.pcap"
+      ],
+      "usable_samples": 138,
+      "relationships": [
+        {
+          "a": "Email/vpn_email2a.pcap",
+          "b": "Email/vpn_email2b.pcap",
+          "overlap_seconds": 1217.2080318927765,
+          "gap_seconds": 0
+        }
+      ],
+      "evidence": "Paired activity captures; overlapping or closely spaced acquisition intervals. Grouped conservatively; separate filenames do not certify independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "FileTransfer/vpn_ftps",
+      "members": [
+        "FileTransfer/vpn_ftps_A.pcap",
+        "FileTransfer/vpn_ftps_B.pcap"
+      ],
+      "usable_samples": 100,
+      "relationships": [
+        {
+          "a": "FileTransfer/vpn_ftps_A.pcap",
+          "b": "FileTransfer/vpn_ftps_B.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 9.248054027557373
+        }
+      ],
+      "evidence": "Paired activity captures; overlapping or closely spaced acquisition intervals. Grouped conservatively; separate filenames do not certify independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "FileTransfer/vpn_sftp",
+      "members": [
+        "FileTransfer/vpn_sftp_A.pcap",
+        "FileTransfer/vpn_sftp_B.pcap"
+      ],
+      "usable_samples": 11,
+      "relationships": [
+        {
+          "a": "FileTransfer/vpn_sftp_A.pcap",
+          "b": "FileTransfer/vpn_sftp_B.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 13.682973861694336
+        }
+      ],
+      "evidence": "Paired activity captures; overlapping or closely spaced acquisition intervals. Grouped conservatively; separate filenames do not certify independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "FileTransfer/vpn_skype_files1",
+      "members": [
+        "FileTransfer/vpn_skype_files1a.pcap",
+        "FileTransfer/vpn_skype_files1b.pcap"
+      ],
+      "usable_samples": 179,
+      "relationships": [
+        {
+          "a": "FileTransfer/vpn_skype_files1a.pcap",
+          "b": "FileTransfer/vpn_skype_files1b.pcap",
+          "overlap_seconds": 3582.9861900806427,
+          "gap_seconds": 0
+        }
+      ],
+      "evidence": "Paired activity captures; overlapping or closely spaced acquisition intervals. Grouped conservatively; separate filenames do not certify independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "P2P/vpn_bittorrent",
+      "members": [
+        "P2P/vpn_bittorrent.pcap"
+      ],
+      "usable_samples": 233,
+      "relationships": [],
+      "evidence": "Only supplied recording for this activity; no evidence permitting internal subdivision into independent acquisitions.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "Streaming/linked-344af536ded1",
+      "members": [
+        "Streaming/vpn_netflix_A.pcap",
+        "Streaming/vpn_spotify_A.pcap",
+        "Streaming/vpn_vimeo_A.pcap",
+        "Streaming/vpn_vimeo_B.pcap",
+        "Streaming/vpn_youtube_A.pcap"
+      ],
+      "usable_samples": 276,
+      "relationships": [
+        {
+          "a": "Streaming/vpn_netflix_A.pcap",
+          "b": "Streaming/vpn_spotify_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1049.0208609104156
+        },
+        {
+          "a": "Streaming/vpn_netflix_A.pcap",
+          "b": "Streaming/vpn_vimeo_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 930.373085975647
+        },
+        {
+          "a": "Streaming/vpn_netflix_A.pcap",
+          "b": "Streaming/vpn_vimeo_B.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 2521.8706419467926
+        },
+        {
+          "a": "Streaming/vpn_netflix_A.pcap",
+          "b": "Streaming/vpn_youtube_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3561.084800004959
+        },
+        {
+          "a": "Streaming/vpn_spotify_A.pcap",
+          "b": "Streaming/vpn_vimeo_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 3751.915380001068
+        },
+        {
+          "a": "Streaming/vpn_spotify_A.pcap",
+          "b": "Streaming/vpn_vimeo_B.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 5343.412935972214
+        },
+        {
+          "a": "Streaming/vpn_spotify_A.pcap",
+          "b": "Streaming/vpn_youtube_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 6382.62709403038
+        },
+        {
+          "a": "Streaming/vpn_vimeo_A.pcap",
+          "b": "Streaming/vpn_vimeo_B.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 255.58403992652893
+        },
+        {
+          "a": "Streaming/vpn_vimeo_A.pcap",
+          "b": "Streaming/vpn_youtube_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 1294.7981979846954
+        },
+        {
+          "a": "Streaming/vpn_vimeo_B.pcap",
+          "b": "Streaming/vpn_youtube_A.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 93.74527597427368
+        }
+      ],
+      "evidence": "Related activity groups linked transitively by shared canonical TCP endpoint tuples or identical model input. Conservatively keep together; endpoint reuse does not prove independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "VoIP/linked-99e47ec66892",
+      "members": [
+        "VoIP/vpn_facebook_audio2.pcap",
+        "VoIP/vpn_hangouts_audio1.pcap",
+        "VoIP/vpn_hangouts_audio2.pcap",
+        "VoIP/vpn_skype_audio1.pcap",
+        "VoIP/vpn_skype_audio2.pcap"
+      ],
+      "usable_samples": 519,
+      "relationships": [
+        {
+          "a": "VoIP/vpn_facebook_audio2.pcap",
+          "b": "VoIP/vpn_hangouts_audio1.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 143.1272177696228
+        },
+        {
+          "a": "VoIP/vpn_facebook_audio2.pcap",
+          "b": "VoIP/vpn_hangouts_audio2.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 16.198466777801514
+        },
+        {
+          "a": "VoIP/vpn_facebook_audio2.pcap",
+          "b": "VoIP/vpn_skype_audio1.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 172.4907419681549
+        },
+        {
+          "a": "VoIP/vpn_facebook_audio2.pcap",
+          "b": "VoIP/vpn_skype_audio2.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 144.51172280311584
+        },
+        {
+          "a": "VoIP/vpn_hangouts_audio1.pcap",
+          "b": "VoIP/vpn_hangouts_audio2.pcap",
+          "overlap_seconds": 3448.194572210312,
+          "gap_seconds": 0
+        },
+        {
+          "a": "VoIP/vpn_hangouts_audio1.pcap",
+          "b": "VoIP/vpn_skype_audio1.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4465.666317939758
+        },
+        {
+          "a": "VoIP/vpn_hangouts_audio1.pcap",
+          "b": "VoIP/vpn_skype_audio2.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4437.687298774719
+        },
+        {
+          "a": "VoIP/vpn_hangouts_audio2.pcap",
+          "b": "VoIP/vpn_skype_audio1.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4338.737566947937
+        },
+        {
+          "a": "VoIP/vpn_hangouts_audio2.pcap",
+          "b": "VoIP/vpn_skype_audio2.pcap",
+          "overlap_seconds": 0,
+          "gap_seconds": 4310.758547782898
+        },
+        {
+          "a": "VoIP/vpn_skype_audio1.pcap",
+          "b": "VoIP/vpn_skype_audio2.pcap",
+          "overlap_seconds": 3868.321573972702,
+          "gap_seconds": 0
+        }
+      ],
+      "evidence": "Related activity groups linked transitively by shared canonical TCP endpoint tuples or identical model input. Conservatively keep together; endpoint reuse does not prove independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    },
+    {
+      "capture_group_id": "VoIP/vpn_voipbuster1",
+      "members": [
+        "VoIP/vpn_voipbuster1a.pcap",
+        "VoIP/vpn_voipbuster1b.pcap"
+      ],
+      "usable_samples": 35,
+      "relationships": [
+        {
+          "a": "VoIP/vpn_voipbuster1a.pcap",
+          "b": "VoIP/vpn_voipbuster1b.pcap",
+          "overlap_seconds": 3597.6938951015472,
+          "gap_seconds": 0
+        }
+      ],
+      "evidence": "Paired activity captures; overlapping or closely spaced acquisition intervals. Grouped conservatively; separate filenames do not certify independence.",
+      "independent_of_other_groups": "UNVERIFIED",
+      "permitted_to_subdivide": false
+    }
+  ],
+  "verified_independence": false,
+  "timestamp_equality_not_proof": true
+}
