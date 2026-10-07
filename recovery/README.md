@@ -24,6 +24,12 @@ refuses existing result, log or checkpoint files. For repeat runs, use distinct
 `--results`, `--checkpoints`, and `--log-dir` locations. Every seed's saved manifest
 must be shared across conditions. Freeze all settings before examining test results.
 
+For environment recreation with the exact recorded transitive package versions,
+use `uv pip install --python .venv-recovery/bin/python -r recovery/requirements-resolved.txt`.
+The Python, CUDA, cuDNN, GPU driver and host versions used are also saved in each
+result JSON. The Nix shell inherits the host's Nixpkgs rather than a dedicated
+project flake lock.
+
 ## Data representation and splitting
 
 - Read classic PCAP and PCAPNG based on magic, including mislabeled extensions.

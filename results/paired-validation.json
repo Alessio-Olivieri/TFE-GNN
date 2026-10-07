@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "conditions": [
+    "real",
+    "random",
+    "header-only"
+  ],
+  "metric_recomputation": "Independent confusion-matrix arithmetic; tolerance 1e-12",
+  "common_split_and_initialization": true,
+  "group_leakage_checks": [
+    "tuple_hash",
+    "content_hash",
+    "group_id"
+  ],
+  "original_working_files_verified": 12,
+  "archived_original_files_verified": 41,
+  "capture_hashes_verified": 31,
+  "unit_tests_passed": 12,
+  "epochs_per_condition": 20,
+  "oom_attempts": 0,
+  "source_commit": "4bca3256ead2ab2e61dab6b01b7c03abc41cf704"
+}
