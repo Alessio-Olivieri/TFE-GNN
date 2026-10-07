@@ -8,7 +8,8 @@ import unittest
 
 from recovery.audit import CLASSES, tcp_packet
 from recovery.capture_audit import (acquisition_key, assess_feasibility,
-                                    validate_assignment, scan_capture)
+                                    validate_assignment, scan_capture, refine_capture_groups)
+from recovery.capture_audit_report import ipv6_transport, coverage_status, group_evidence
 from recovery.test_recovery import ipv4_packet
 import collections
 
@@ -97,6 +98,62 @@ class AcquisitionTests(unittest.TestCase):
             changed['payloads'] = [[1]]
             with self.assertRaises(ValueError):
                 scan_capture(path, 'Chat/a.pcap', [changed])
+
+    def test_ipv6_transport_counts_extensions_without_guessing_fragments(self):
+        packet = bytearray(48)
+        packet[0], packet[6] = 0x60, 17
+        self.assertEqual(ipv6_transport(packet), 17)
+        packet[6], packet[40] = 0, 6
+        self.assertEqual(ipv6_transport(packet), 6)
+        packet[6], packet[40], packet[43] = 44, 17, 8
+        self.assertIsNone(ipv6_transport(packet))
+        self.assertIsNone(ipv6_transport(packet[:39]))
+
+    def test_overlapping_acquisition_evidence_and_unassessed_coverage(self):
+        captures = [dict(source_pcap=f'Email/vpn_email2{x}.pcap', capture_group_id='Email/vpn_email2',
+                         labels=['Email'], usable_samples=1, group_reason='related activity and overlap',
+                         first_timestamp=i, last_timestamp=i + 10,
+                         stage_counts=dict(usable_samples=1, raw_packets=2, model_unique_source_packets=2,
+                                           model_payload_packets=1, model_real_payload_bytes=12),
+                         protocol_dissector={'model_source_packet_protocol_labels': {'tls': 2}})
+                    for i, x in enumerate(('a', 'b'))]
+        evidence = group_evidence(captures)
+        self.assertEqual(len(evidence), 1)
+        self.assertEqual(evidence[0]['relationships'][0]['overlap_seconds'], 9)
+        self.assertFalse(evidence[0]['permitted_to_subdivide'])
+        coverage = coverage_status(captures)
+        self.assertEqual(coverage['total_model_payload_bytes'], 24)
+        self.assertFalse(coverage['range_parser_executed'])
+        for row in coverage['by_scope']:
+            self.assertIsNone(row['confirmed_ciphertext_bytes'])
+            self.assertIsNone(row['unknown_bytes'])
+            self.assertEqual(row['unassessed_bytes'], row['model_payload_bytes'])
+
+    def test_graph_pmi_has_no_cross_packet_fitted_state(self):
+        from recovery.data import padded_graphs
+        import torch
+        before = padded_graphs([[1, 2, 3, 1, 2, 4, 1, 4]], 40)[0]
+        padded_graphs([[20, 21, 22, 23, 24] * 8], 40)
+        after = padded_graphs([[1, 2, 3, 1, 2, 4, 1, 4]], 40)[0]
+        self.assertTrue(torch.equal(before.x, after.x))
+        self.assertTrue(torch.equal(before.edge_index, after.edge_index))
+
+    def test_related_flows_merge_acquisition_groups_transitively_and_deterministically(self):
+        inventory = [dict(source_pcap=f'Chat/{k}.pcap', capture_group_id=f'Chat/{k}', labels=['Chat'])
+                     for k in ('a', 'b', 'c', 'd')]
+        samples = [dict(id=str(i), capture=f'Chat/{capture}.pcap', tuple_hash=tuple_hash, content_hash=content)
+                   for i, (capture, tuple_hash, content) in enumerate(
+                       [('a', 'ab', 'a'), ('b', 'ab', 'b'), ('b', 'bc', 'b2'),
+                        ('c', 'bc', 'c'), ('d', 'other', 'd')])]
+        refined, links = refine_capture_groups(inventory, samples)
+        groups = {c['source_pcap']: c['capture_group_id'] for c in refined}
+        self.assertEqual(groups['Chat/a.pcap'], groups['Chat/c.pcap'])
+        self.assertNotEqual(groups['Chat/a.pcap'], groups['Chat/d.pcap'])
+        reverse, reversed_links = refine_capture_groups(list(reversed(inventory)), list(reversed(samples)))
+        self.assertEqual(groups, {c['source_pcap']: c['capture_group_id'] for c in reverse})
+        self.assertEqual(links, reversed_links)
+        self.assertEqual(inventory[0]['capture_group_id'], 'Chat/a')
+        self.assertTrue(all(r['labels'] == ['Chat'] for r in refined))
 
 
 if __name__ == '__main__':

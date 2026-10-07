@@ -5,6 +5,7 @@ does not modify model code, captures, graph caches, or previous results.
 """
 import argparse
 import collections
+import copy
 import csv
 import datetime
 import gzip
@@ -91,6 +92,61 @@ def assess_feasibility(inventory):
                 group_counts={c: len(g) for c, g in groups.items()}, blocking_classes=limiting,
                 genuine_independence_certified=False, split_seed=32,
                 training_permitted=False, split_or_fold_manifest_created=False)
+
+
+def refine_capture_groups(inventory, samples):
+    """Join activity groups linked by canonical tuples or identical input bytes.
+
+    Endpoint reuse is not proof of one acquisition, but conservatively prevents
+    treating persistent/reused connections as evidence of independence. The
+    result is still an upper bound, NEVER an independence certificate.
+    """
+    initial = {c['source_pcap']: c['capture_group_id'] for c in inventory}
+    parent = {g: g for g in initial.values()}
+
+    def find(g):
+        while parent[g] != g:
+            parent[g] = parent[parent[g]]
+            g = parent[g]
+        return g
+
+    def union(a, b):
+        a, b = sorted((find(a), find(b)))
+        parent[b] = a
+
+    evidence = []
+    for key in ('tuple_hash', 'content_hash'):
+        matches = collections.defaultdict(list)
+        for s in samples:
+            matches[s[key]].append(s)
+        for digest, records in sorted(matches.items()):
+            captures = sorted({r['capture'] for r in records})
+            if len(captures) < 2:
+                continue
+            for capture in captures[1:]:
+                union(initial[captures[0]], initial[capture])
+            evidence.append(dict(evidence_key=key, digest=digest, source_captures=captures,
+                source_sample_ids=sorted(r['id'] for r in records),
+                source_flow_intervals=[dict(capture=r['capture'], first=r.get('first'), last=r.get('last'))
+                                       for r in sorted(records, key=lambda r: r['id'])],
+                interpretation='Conservative related-flow link, not proof of identical acquisition. '
+                               'TCP tuple reuse may be persistent connections or port reuse.'))
+    members = collections.defaultdict(list)
+    for capture, group in initial.items():
+        members[find(group)].append(capture)
+    refined = copy.deepcopy(inventory)
+    for c in refined:
+        sources = sorted(members[find(c['capture_group_id'])])
+        families = {initial[s] for s in sources}
+        c['initial_activity_group_id'] = c['capture_group_id']
+        if len(families) > 1:
+            fingerprint = hashlib.sha256(json.dumps(sources, separators=(',', ':')).encode()).hexdigest()[:12]
+            labels = sorted({s.split('/')[0] for s in sources})
+            c['capture_group_id'] = '+'.join(labels) + '/linked-' + fingerprint
+            c['group_reason'] = ('Related activity groups linked transitively by shared canonical TCP endpoint tuples '
+                                 'or identical model input. Conservatively keep together; endpoint reuse does not prove independence.')
+        c['grouping_version'] = 'capture-audit-v2-conservative-session-links'
+    return refined, evidence
 
 
 def validate_assignment(records, assignment, samples):
