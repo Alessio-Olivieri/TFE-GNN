@@ -1,0 +1,999 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source_capture": "Chat/vpn_facebook_chat1a.pcap",
+      "flow_id": "c41cf3d24c41b336207ea32570a3af8e3228ba88dc4b6604f52290596c6bd4e4",
+      "frame": 2408,
+      "label": 0,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_facebook_chat1a.pcap",
+      "flow_id": "c41cf3d24c41b336207ea32570a3af8e3228ba88dc4b6604f52290596c6bd4e4",
+      "frame": 2480,
+      "label": 0,
+      "packet_index": 14,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 15,
+          "record_start": 0,
+          "record_length": 26,
+          "record_type": 21
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_facebook_chat1a.pcap",
+      "flow_id": "c41cf3d24c41b336207ea32570a3af8e3228ba88dc4b6604f52290596c6bd4e4",
+      "frame": 2482,
+      "label": 0,
+      "packet_index": 16,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 15,
+          "record_start": 0,
+          "record_length": 26,
+          "record_type": 21
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_hangouts_chat1a.pcap",
+      "flow_id": "7e44b0ab97877e68bfc943a14e463155ac78fd885230358403bbe1a0b769f3df",
+      "frame": 75,
+      "label": 0,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_hangouts_chat1a.pcap",
+      "flow_id": "7e44b0ab97877e68bfc943a14e463155ac78fd885230358403bbe1a0b769f3df",
+      "frame": 88,
+      "label": 0,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 141,
+          "record_start": 0,
+          "record_length": 152,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_hangouts_chat1a.pcap",
+      "flow_id": "7e44b0ab97877e68bfc943a14e463155ac78fd885230358403bbe1a0b769f3df",
+      "frame": 96,
+      "label": 0,
+      "packet_index": 14,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 40,
+          "record_start": 0,
+          "record_length": 51,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_hangouts_chat1b.pcap",
+      "flow_id": "4e55409739cda12b3593a4e625746bedbbd9b828cd685af2ae43b273bf312a50",
+      "frame": 376,
+      "label": 0,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_hangouts_chat1b.pcap",
+      "flow_id": "4e55409739cda12b3593a4e625746bedbbd9b828cd685af2ae43b273bf312a50",
+      "frame": 377,
+      "label": 0,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 141,
+          "record_start": 0,
+          "record_length": 152,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Chat/vpn_hangouts_chat1b.pcap",
+      "flow_id": "4e55409739cda12b3593a4e625746bedbbd9b828cd685af2ae43b273bf312a50",
+      "frame": 407,
+      "label": 0,
+      "packet_index": 14,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 40,
+          "record_start": 0,
+          "record_length": 51,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Email/vpn_email2a.pcap",
+      "flow_id": "b7505c8b905a8e6293fabf5ef95ec83982e333d1ee89483f53ade10565edde50",
+      "frame": 39,
+      "label": 1,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Email/vpn_email2a.pcap",
+      "flow_id": "b7505c8b905a8e6293fabf5ef95ec83982e333d1ee89483f53ade10565edde50",
+      "frame": 52,
+      "label": 1,
+      "packet_index": 14,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 65,
+          "record_start": 0,
+          "record_length": 76,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Email/vpn_email2a.pcap",
+      "flow_id": "b7505c8b905a8e6293fabf5ef95ec83982e333d1ee89483f53ade10565edde50",
+      "frame": 57,
+      "label": 1,
+      "packet_index": 16,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 32,
+          "record_start": 0,
+          "record_length": 43,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Email/vpn_email2b.pcap",
+      "flow_id": "b72e85e99f423c487f741d9112629fc9163d021a0f31c6b9774f0787e9effca7",
+      "frame": 210,
+      "label": 1,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Email/vpn_email2b.pcap",
+      "flow_id": "b72e85e99f423c487f741d9112629fc9163d021a0f31c6b9774f0787e9effca7",
+      "frame": 222,
+      "label": 1,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 65,
+          "record_start": 0,
+          "record_length": 76,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Email/vpn_email2b.pcap",
+      "flow_id": "b72e85e99f423c487f741d9112629fc9163d021a0f31c6b9774f0787e9effca7",
+      "frame": 234,
+      "label": 1,
+      "packet_index": 15,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 32,
+          "record_start": 0,
+          "record_length": 43,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_ftps_B.pcap",
+      "flow_id": "47a5d713f76cf14d571507a39d5fe96a0a8065ac694faf7dcc0ca386026076b3",
+      "frame": 4355,
+      "label": 2,
+      "packet_index": 5,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 117,
+          "end": 133,
+          "record_start": 104,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_ftps_B.pcap",
+      "flow_id": "47a5d713f76cf14d571507a39d5fe96a0a8065ac694faf7dcc0ca386026076b3",
+      "frame": 4357,
+      "label": 2,
+      "packet_index": 7,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 19,
+          "end": 35,
+          "record_start": 6,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_ftps_B.pcap",
+      "flow_id": "47a5d713f76cf14d571507a39d5fe96a0a8065ac694faf7dcc0ca386026076b3",
+      "frame": 4358,
+      "label": 2,
+      "packet_index": 8,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 37,
+          "record_start": 0,
+          "record_length": 48,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_sftp_A.pcap",
+      "flow_id": "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+      "frame": 33627,
+      "label": 2,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_sftp_A.pcap",
+      "flow_id": "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+      "frame": 33628,
+      "label": 2,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 37,
+          "record_start": 0,
+          "record_length": 48,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_sftp_A.pcap",
+      "flow_id": "1470c10ebc48b4342aec762d71a08d6795003d18e98225eb5cd962ceb39a870f",
+      "frame": 33629,
+      "label": 2,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 34,
+          "record_start": 0,
+          "record_length": 45,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_skype_files1b.pcap",
+      "flow_id": "ff8403c450c75a455d97d5508760c4a84cd70b255c78a855266fbf9a85e715e0",
+      "frame": 19103,
+      "label": 2,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_skype_files1b.pcap",
+      "flow_id": "ff8403c450c75a455d97d5508760c4a84cd70b255c78a855266fbf9a85e715e0",
+      "frame": 19107,
+      "label": 2,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 40,
+          "record_start": 0,
+          "record_length": 51,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "FileTransfer/vpn_skype_files1b.pcap",
+      "flow_id": "ff8403c450c75a455d97d5508760c4a84cd70b255c78a855266fbf9a85e715e0",
+      "frame": 19108,
+      "label": 2,
+      "packet_index": 14,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 26,
+          "record_start": 0,
+          "record_length": 37,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_netflix_A.pcap",
+      "flow_id": "7ba589ac227830a147c27ab7893b6a1ef7318fdb20affc5ac76104cf3b8853bc",
+      "frame": 526,
+      "label": 4,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_spotify_A.pcap",
+      "flow_id": "603dcfad06783f560a0f5d62ae30d4edb8e8904c5e86f7d42ec4e1aac50b1e74",
+      "frame": 57179,
+      "label": 4,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_spotify_A.pcap",
+      "flow_id": "603dcfad06783f560a0f5d62ae30d4edb8e8904c5e86f7d42ec4e1aac50b1e74",
+      "frame": 57180,
+      "label": 4,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 37,
+          "record_start": 0,
+          "record_length": 48,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_spotify_A.pcap",
+      "flow_id": "603dcfad06783f560a0f5d62ae30d4edb8e8904c5e86f7d42ec4e1aac50b1e74",
+      "frame": 57181,
+      "label": 4,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 34,
+          "record_start": 0,
+          "record_length": 45,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_vimeo_A.pcap",
+      "flow_id": "a74892787aa465cddefc0b37a9c3654dcff75a495056dc68c3779fdce32dd95e",
+      "frame": 46,
+      "label": 4,
+      "packet_index": 10,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_vimeo_A.pcap",
+      "flow_id": "77a45a909c03f509c0e53fa437bcbf8890fb83bb406cb7054e7cd2bb7bb4d12b",
+      "frame": 7491,
+      "label": 4,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_vimeo_A.pcap",
+      "flow_id": "77a45a909c03f509c0e53fa437bcbf8890fb83bb406cb7054e7cd2bb7bb4d12b",
+      "frame": 7493,
+      "label": 4,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 984,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_vimeo_B.pcap",
+      "flow_id": "435e50f6143392386b94bfb7874cc8aeb5a70c9bc4aa29881d688465a6c2ba5e",
+      "frame": 25,
+      "label": 4,
+      "packet_index": 4,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 124,
+          "end": 140,
+          "record_start": 111,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_vimeo_B.pcap",
+      "flow_id": "435e50f6143392386b94bfb7874cc8aeb5a70c9bc4aa29881d688465a6c2ba5e",
+      "frame": 27,
+      "label": 4,
+      "packet_index": 6,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 19,
+          "end": 35,
+          "record_start": 6,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_vimeo_B.pcap",
+      "flow_id": "435e50f6143392386b94bfb7874cc8aeb5a70c9bc4aa29881d688465a6c2ba5e",
+      "frame": 12622,
+      "label": 4,
+      "packet_index": 9,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 15,
+          "record_start": 0,
+          "record_length": 26,
+          "record_type": 21
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_youtube_A.pcap",
+      "flow_id": "b0aab27b0502f4d4c7782698d6d8bdbc27ccd55fc0944730f28f14eae364dc0c",
+      "frame": 14475,
+      "label": 4,
+      "packet_index": 5,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 105,
+          "end": 121,
+          "record_start": 92,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_youtube_A.pcap",
+      "flow_id": "b0aab27b0502f4d4c7782698d6d8bdbc27ccd55fc0944730f28f14eae364dc0c",
+      "frame": 14482,
+      "label": 4,
+      "packet_index": 7,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 19,
+          "end": 35,
+          "record_start": 6,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "Streaming/vpn_youtube_A.pcap",
+      "flow_id": "b0aab27b0502f4d4c7782698d6d8bdbc27ccd55fc0944730f28f14eae364dc0c",
+      "frame": 15944,
+      "label": 4,
+      "packet_index": 9,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 1302,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_facebook_audio2.pcap",
+      "flow_id": "3754cdf8f121ee2ebe6bc19ca47042b9a1d029b6d287c8f00d2dd54d224bde81",
+      "frame": 7287,
+      "label": 5,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_facebook_audio2.pcap",
+      "flow_id": "3754cdf8f121ee2ebe6bc19ca47042b9a1d029b6d287c8f00d2dd54d224bde81",
+      "frame": 7288,
+      "label": 5,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 49,
+          "record_start": 0,
+          "record_length": 60,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_facebook_audio2.pcap",
+      "flow_id": "3754cdf8f121ee2ebe6bc19ca47042b9a1d029b6d287c8f00d2dd54d224bde81",
+      "frame": 7289,
+      "label": 5,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 693,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_hangouts_audio1.pcap",
+      "flow_id": "16b20867266dd983c2b6d66de2b43cbad261b0929256c82666e95ef492968e8a",
+      "frame": 20,
+      "label": 5,
+      "packet_index": 5,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 117,
+          "end": 133,
+          "record_start": 104,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_hangouts_audio1.pcap",
+      "flow_id": "16b20867266dd983c2b6d66de2b43cbad261b0929256c82666e95ef492968e8a",
+      "frame": 22,
+      "label": 5,
+      "packet_index": 7,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 19,
+          "end": 35,
+          "record_start": 6,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_hangouts_audio1.pcap",
+      "flow_id": "16b20867266dd983c2b6d66de2b43cbad261b0929256c82666e95ef492968e8a",
+      "frame": 23,
+      "label": 5,
+      "packet_index": 8,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 71,
+          "record_start": 0,
+          "record_length": 82,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_hangouts_audio2.pcap",
+      "flow_id": "560241ac44281ba9754d087b4c7a967511e41b76f81ce3d5f2b0c870fbd40b25",
+      "frame": 401,
+      "label": 5,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_hangouts_audio2.pcap",
+      "flow_id": "560241ac44281ba9754d087b4c7a967511e41b76f81ce3d5f2b0c870fbd40b25",
+      "frame": 402,
+      "label": 5,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 49,
+          "record_start": 0,
+          "record_length": 60,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_hangouts_audio2.pcap",
+      "flow_id": "560241ac44281ba9754d087b4c7a967511e41b76f81ce3d5f2b0c870fbd40b25",
+      "frame": 403,
+      "label": 5,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 599,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_skype_audio1.pcap",
+      "flow_id": "93ba53d5aa36cccdebc99ea14a90d4e576999de22d900705d369c3d362aa76c0",
+      "frame": 84159,
+      "label": 5,
+      "packet_index": 5,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 117,
+          "end": 133,
+          "record_start": 104,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_skype_audio1.pcap",
+      "flow_id": "93ba53d5aa36cccdebc99ea14a90d4e576999de22d900705d369c3d362aa76c0",
+      "frame": 84162,
+      "label": 5,
+      "packet_index": 7,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 19,
+          "end": 35,
+          "record_start": 6,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_skype_audio1.pcap",
+      "flow_id": "93ba53d5aa36cccdebc99ea14a90d4e576999de22d900705d369c3d362aa76c0",
+      "frame": 84163,
+      "label": 5,
+      "packet_index": 8,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 37,
+          "record_start": 0,
+          "record_length": 48,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_skype_audio2.pcap",
+      "flow_id": "34142a6636b40f0cca4a53fd8930de151dfb1880666f5cca486032bea658892a",
+      "frame": 108838,
+      "label": 5,
+      "packet_index": 11,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 94,
+          "end": 110,
+          "record_start": 81,
+          "record_length": 40,
+          "record_type": 22
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_skype_audio2.pcap",
+      "flow_id": "34142a6636b40f0cca4a53fd8930de151dfb1880666f5cca486032bea658892a",
+      "frame": 108839,
+      "label": 5,
+      "packet_index": 12,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 49,
+          "record_start": 0,
+          "record_length": 60,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_skype_audio2.pcap",
+      "flow_id": "34142a6636b40f0cca4a53fd8930de151dfb1880666f5cca486032bea658892a",
+      "frame": 108840,
+      "label": 5,
+      "packet_index": 13,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 1300,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_voipbuster1b.pcap",
+      "flow_id": "6d2e38dae6f0fe929bf16b93acc6954172136b0cb984e867a960468c023d3ae1",
+      "frame": 58315,
+      "label": 5,
+      "packet_index": 14,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 196,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_voipbuster1b.pcap",
+      "flow_id": "6d2e38dae6f0fe929bf16b93acc6954172136b0cb984e867a960468c023d3ae1",
+      "frame": 58328,
+      "label": 5,
+      "packet_index": 15,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 316,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    },
+    {
+      "source_capture": "VoIP/vpn_voipbuster1b.pcap",
+      "flow_id": "6d2e38dae6f0fe929bf16b93acc6954172136b0cb984e867a960468c023d3ae1",
+      "frame": 58329,
+      "label": 5,
+      "packet_index": 16,
+      "exact_ciphertext_ranges": [
+        {
+          "start": 13,
+          "end": 150,
+          "record_start": 0,
+          "record_length": 198,
+          "record_type": 23
+        }
+      ],
+      "scapy_payload_matches_cached_hash": true,
+      "independent_tshark_record_offsets_match": true
+    }
+  ],
+  "checked_packets": 55,
+  "method": "Scapy payload extraction plus TShark PDML complete-record packet offsets; TLS-GCM suite independently corroborated in coverage audit. Synthetic/reassembled PDML offsets ignored.",
+  "caveat": "Bounded representative check, not cryptographic authentication/decryption. Cross-segment mapping additionally covered by exact sequence mapping and synthetic tests.",
+  "ciphertext_transformation_implemented": false
+}
