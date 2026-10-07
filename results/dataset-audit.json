@@ -1,0 +1,727 @@
+{
+  "classes": [
+    "Chat",
+    "Email",
+    "FileTransfer",
+    "P2P",
+    "Streaming",
+    "VoIP"
+  ],
+  "settings": {
+    "flow_packets": 50,
+    "header_bytes": 40,
+    "payload_bytes": 150,
+    "padding_token": 256,
+    "pmi_window": 5,
+    "anomalous_data_packets": 10000,
+    "transport": "TCP",
+    "network": "IPv4",
+    "flow_key": "capture + bidirectional TCP five-tuple, no idle timeout",
+    "header_policy": "first 50 TCP headers including ACK-only packets",
+    "payload_policy": "first 50 nonempty TCP payloads, independently padded",
+    "address_policy": "remove IPv4 addresses and TCP ports before truncation",
+    "fragments": "excluded and counted",
+    "retransmissions": "retained, matching tuple extraction"
+  },
+  "captures": [
+    {
+      "path": "Chat/vpn_aim_chat1a.pcap",
+      "sha256": "3a685ee836ab57f6c44dbdb28e45c857b9ad7036773d80825bb3e45c74922294",
+      "bytes": 178417,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 1168,
+        "TCP": 1134,
+        "tcp_data_packets": 611,
+        "UDP": 34
+      },
+      "tcp_tuples": 7,
+      "bidirectional_tuples": 7,
+      "eligible_samples": 5,
+      "excluded_flows": {
+        "empty_payload_flow": 2
+      }
+    },
+    {
+      "path": "Chat/vpn_aim_chat1b.pcap",
+      "sha256": "e5f60bbdc06813675ba3e1c1dd6c4ea93971d4c8f6d67a9226ed85bab68c30cf",
+      "bytes": 190525,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 1287,
+        "TCP": 1278,
+        "tcp_data_packets": 712,
+        "UDP": 8,
+        "other_ip": 1
+      },
+      "tcp_tuples": 6,
+      "bidirectional_tuples": 6,
+      "eligible_samples": 4,
+      "excluded_flows": {
+        "empty_payload_flow": 2
+      }
+    },
+    {
+      "path": "Chat/vpn_facebook_chat1a.pcap",
+      "sha256": "5b4fc79048c150e045d45097f34616c91612d6bf1ec5a8a9d959486effa026ab",
+      "bytes": 3396317,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 8801,
+        "TCP": 7711,
+        "tcp_data_packets": 4276,
+        "UDP": 1072,
+        "other_ip": 18
+      },
+      "tcp_tuples": 53,
+      "bidirectional_tuples": 53,
+      "eligible_samples": 51,
+      "excluded_flows": {
+        "empty_payload_flow": 2
+      }
+    },
+    {
+      "path": "Chat/vpn_facebook_chat1b.pcap",
+      "sha256": "f6ae91cc3b684af4841ad1593a1b08e57869a48843595b6c98149597613918d6",
+      "bytes": 2594284,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 7567,
+        "UDP": 1136,
+        "TCP": 6402,
+        "tcp_data_packets": 3396,
+        "other_ip": 29
+      },
+      "tcp_tuples": 6,
+      "bidirectional_tuples": 6,
+      "eligible_samples": 6,
+      "excluded_flows": {}
+    },
+    {
+      "path": "Chat/vpn_hangouts_chat1a.pcap",
+      "sha256": "bc675d9f43ad26aba8b61b9e179261882862fb373a007c75812e645feaf4fc76",
+      "bytes": 13708539,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 27408,
+        "TCP": 24923,
+        "tcp_data_packets": 15958,
+        "UDP": 2456,
+        "other_ip": 29
+      },
+      "tcp_tuples": 62,
+      "bidirectional_tuples": 62,
+      "eligible_samples": 58,
+      "excluded_flows": {
+        "empty_payload_flow": 4
+      }
+    },
+    {
+      "path": "Chat/vpn_hangouts_chat1b.pcap",
+      "sha256": "e0429c54dd5b05e9156f932c38d192be8addc773acf7fb3cdef8e283f35e3fb7",
+      "bytes": 6194348,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 17543,
+        "UDP": 2912,
+        "TCP": 14602,
+        "tcp_data_packets": 8498,
+        "other_ip": 29
+      },
+      "tcp_tuples": 35,
+      "bidirectional_tuples": 35,
+      "eligible_samples": 34,
+      "excluded_flows": {
+        "empty_payload_flow": 1
+      }
+    },
+    {
+      "path": "Chat/vpn_icq_chat1a.pcap",
+      "sha256": "db88a8dc370ee9baeb7924301ecc2818493b3405dcadb882fc3f1a69078ab4c5",
+      "bytes": 486616,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 4196,
+        "TCP": 4122,
+        "tcp_data_packets": 2271,
+        "UDP": 74
+      },
+      "tcp_tuples": 6,
+      "bidirectional_tuples": 6,
+      "eligible_samples": 5,
+      "excluded_flows": {
+        "empty_payload_flow": 1
+      }
+    },
+    {
+      "path": "Chat/vpn_icq_chat1b.pcap",
+      "sha256": "27788de7e6b54fade74f61939737714f714ba7283a770df5e1cd013e89fbf1cc",
+      "bytes": 419214,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 3681,
+        "TCP": 3681,
+        "tcp_data_packets": 2033
+      },
+      "tcp_tuples": 2,
+      "bidirectional_tuples": 2,
+      "eligible_samples": 1,
+      "excluded_flows": {
+        "empty_payload_flow": 1
+      }
+    },
+    {
+      "path": "Chat/vpn_skype_chat1a.pcap",
+      "sha256": "3b7edd244f2415dca5d09ce41a9a32da28e58eb6e5eca93b3501c62b2b26ca16",
+      "bytes": 849211,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 6973,
+        "TCP": 6896,
+        "tcp_data_packets": 3322,
+        "UDP": 74,
+        "other_ip": 3
+      },
+      "tcp_tuples": 12,
+      "bidirectional_tuples": 10,
+      "eligible_samples": 10,
+      "excluded_flows": {
+        "empty_payload_flow": 2
+      }
+    },
+    {
+      "path": "Chat/vpn_skype_chat1b.pcap",
+      "sha256": "48ffb116ae5359fc9e2323f6d19e77a40a11a28e64aa591d60ef12f9bbc413a0",
+      "bytes": 1004428,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 7602,
+        "TCP": 7530,
+        "tcp_data_packets": 4986,
+        "UDP": 72
+      },
+      "tcp_tuples": 9,
+      "bidirectional_tuples": 9,
+      "eligible_samples": 9,
+      "excluded_flows": {}
+    },
+    {
+      "path": "Email/vpn_email2a.pcap",
+      "sha256": "1a156940f0f434318479704f90b141a0246c92036219714993019cde28149d85",
+      "bytes": 559048,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 2707,
+        "UDP": 160,
+        "TCP": 2534,
+        "tcp_data_packets": 1360,
+        "other_ip": 13
+      },
+      "tcp_tuples": 68,
+      "bidirectional_tuples": 68,
+      "eligible_samples": 65,
+      "excluded_flows": {
+        "empty_payload_flow": 3
+      }
+    },
+    {
+      "path": "Email/vpn_email2b.pcap",
+      "sha256": "762f7b48825e6e7071c5fad90a8c26ebbb61cb25d5e71eeb9347c22a0e9c7c6f",
+      "bytes": 7626146,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 18874,
+        "TCP": 18714,
+        "tcp_data_packets": 11268,
+        "UDP": 150,
+        "other_ip": 10
+      },
+      "tcp_tuples": 75,
+      "bidirectional_tuples": 75,
+      "eligible_samples": 73,
+      "excluded_flows": {
+        "empty_payload_flow": 2
+      }
+    },
+    {
+      "path": "FileTransfer/vpn_ftps_A.pcap",
+      "sha256": "69f048a986f0de460c893e016d10e84aa5a63649b5066b654bca70b901eec983",
+      "bytes": 94380369,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 102569,
+        "TCP": 102509,
+        "tcp_data_packets": 67762,
+        "UDP": 56,
+        "other_ip": 4
+      },
+      "tcp_tuples": 62,
+      "bidirectional_tuples": 62,
+      "eligible_samples": 60,
+      "excluded_flows": {
+        "empty_payload_flow": 1,
+        "anomalous_flow": 1
+      }
+    },
+    {
+      "path": "FileTransfer/vpn_ftps_B.pcap",
+      "sha256": "4ced53ca8895deb0801cc450aad0b6c32534ad5c864fc71ae39233e78a073331",
+      "bytes": 82635430,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 88685,
+        "TCP": 88647,
+        "tcp_data_packets": 59126,
+        "UDP": 34,
+        "other_ip": 4
+      },
+      "tcp_tuples": 42,
+      "bidirectional_tuples": 42,
+      "eligible_samples": 40,
+      "excluded_flows": {
+        "empty_payload_flow": 1,
+        "anomalous_flow": 1
+      }
+    },
+    {
+      "path": "FileTransfer/vpn_sftp_A.pcap",
+      "sha256": "fff704fee62577b104ba46cead5f8057ba861e64df9789a8b2cee19e8ed6dc44",
+      "bytes": 82275894,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 90905,
+        "TCP": 90851,
+        "tcp_data_packets": 59655,
+        "UDP": 52,
+        "other_ip": 2
+      },
+      "tcp_tuples": 8,
+      "bidirectional_tuples": 8,
+      "eligible_samples": 6,
+      "excluded_flows": {
+        "anomalous_flow": 1,
+        "empty_payload_flow": 1
+      }
+    },
+    {
+      "path": "FileTransfer/vpn_sftp_B.pcap",
+      "sha256": "e463a35a076f4a9b0ce7887deaefde2c2f960925f642490258ec68b586c52a00",
+      "bytes": 17982779,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 20177,
+        "TCP": 20166,
+        "tcp_data_packets": 13624,
+        "UDP": 10,
+        "other_ip": 1
+      },
+      "tcp_tuples": 9,
+      "bidirectional_tuples": 9,
+      "eligible_samples": 5,
+      "excluded_flows": {
+        "empty_payload_flow": 3,
+        "anomalous_flow": 1
+      }
+    },
+    {
+      "path": "FileTransfer/vpn_skype_files1a.pcap",
+      "sha256": "fc6912d5dd0cb7814cb8b1605cd1db7505e66844fad031f57a2cfdb921b03cda",
+      "bytes": 9036193,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 42936,
+        "TCP": 34104,
+        "tcp_data_packets": 20356,
+        "UDP": 8158,
+        "other_ip": 674
+      },
+      "tcp_tuples": 95,
+      "bidirectional_tuples": 86,
+      "eligible_samples": 82,
+      "excluded_flows": {
+        "empty_payload_flow": 13
+      }
+    },
+    {
+      "path": "FileTransfer/vpn_skype_files1b.pcap",
+      "sha256": "37bbdaf33d18f2c0b5288b59d53533ea0bf9c5b0cbed1c16f5cae17f74231c63",
+      "bytes": 6690677,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 32817,
+        "UDP": 9106,
+        "other_ip": 701,
+        "TCP": 23010,
+        "tcp_data_packets": 13701
+      },
+      "tcp_tuples": 104,
+      "bidirectional_tuples": 101,
+      "eligible_samples": 97,
+      "excluded_flows": {
+        "empty_payload_flow": 7
+      }
+    },
+    {
+      "path": "P2P/vpn_bittorrent.pcap",
+      "sha256": "4858b3f0020756c7abd5cd6ce2bfee91d31eec2e0e957966dca53c6cf1eccbba",
+      "bytes": 376187475,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 422098,
+        "UDP": 6745,
+        "TCP": 415329,
+        "other_ip": 24,
+        "tcp_data_packets": 262575
+      },
+      "tcp_tuples": 235,
+      "bidirectional_tuples": 233,
+      "eligible_samples": 233,
+      "excluded_flows": {
+        "empty_payload_flow": 2
+      }
+    },
+    {
+      "path": "Streaming/vpn_netflix_A.pcap",
+      "sha256": "eb7bc6d06d10ebb7d9981f957a70ec4fd779f584b9a0b67814e1b07907c84a0d",
+      "bytes": 806459199,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 870018,
+        "TCP": 869713,
+        "UDP": 258,
+        "tcp_data_packets": 572208,
+        "other_ip": 47
+      },
+      "tcp_tuples": 121,
+      "bidirectional_tuples": 121,
+      "eligible_samples": 60,
+      "excluded_flows": {
+        "empty_payload_flow": 60,
+        "anomalous_flow": 1
+      }
+    },
+    {
+      "path": "Streaming/vpn_spotify_A.pcap",
+      "sha256": "c9cf8dea7551b3ba54f16f5e7aa416409a1bb6e30867d27b9decbef05baaab37",
+      "bytes": 103342155,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 115939,
+        "TCP": 115309,
+        "UDP": 612,
+        "tcp_data_packets": 74792,
+        "other_ip": 18
+      },
+      "tcp_tuples": 69,
+      "bidirectional_tuples": 51,
+      "eligible_samples": 41,
+      "excluded_flows": {
+        "empty_payload_flow": 27,
+        "anomalous_flow": 1
+      }
+    },
+    {
+      "path": "Streaming/vpn_vimeo_A.pcap",
+      "sha256": "d03dbb15c7d938e81e7b2ce1a9606ba64c23ddd0ccc449de4d1e8d30dba047eb",
+      "bytes": 124614526,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 104874,
+        "TCP": 104716,
+        "tcp_data_packets": 90061,
+        "UDP": 151,
+        "other_ip": 7
+      },
+      "tcp_tuples": 42,
+      "bidirectional_tuples": 42,
+      "eligible_samples": 37,
+      "excluded_flows": {
+        "anomalous_flow": 1,
+        "empty_payload_flow": 4
+      }
+    },
+    {
+      "path": "Streaming/vpn_vimeo_B.pcap",
+      "sha256": "963e9c150a37d843da77871ae8d864c3ce025e2e5ead651a8219b6a35cdeacf5",
+      "bytes": 254576115,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 215102,
+        "TCP": 214976,
+        "tcp_data_packets": 183718,
+        "UDP": 120,
+        "other_ip": 6
+      },
+      "tcp_tuples": 54,
+      "bidirectional_tuples": 54,
+      "eligible_samples": 37,
+      "excluded_flows": {
+        "empty_payload_flow": 15,
+        "anomalous_flow": 2
+      }
+    },
+    {
+      "path": "Streaming/vpn_youtube_A.pcap",
+      "sha256": "df444c7eb1148a32baf8ccb29404aceb294423f9aac2aa9a0edb557a1c2be9b7",
+      "bytes": 182232350,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 208355,
+        "UDP": 1584,
+        "TCP": 206752,
+        "tcp_data_packets": 128842,
+        "other_ip": 19
+      },
+      "tcp_tuples": 116,
+      "bidirectional_tuples": 116,
+      "eligible_samples": 101,
+      "excluded_flows": {
+        "empty_payload_flow": 12,
+        "anomalous_flow": 3
+      }
+    },
+    {
+      "path": "VoIP/vpn_facebook_audio2.pcap",
+      "sha256": "ef40538afe08aa6d6d5bf573966af6d5c0304ddf276d1ef634c399186c823d98",
+      "bytes": 6501918,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 15094,
+        "TCP": 12355,
+        "tcp_data_packets": 7560,
+        "UDP": 2553,
+        "other_ip": 186
+      },
+      "tcp_tuples": 139,
+      "bidirectional_tuples": 139,
+      "eligible_samples": 138,
+      "excluded_flows": {
+        "empty_payload_flow": 1
+      }
+    },
+    {
+      "path": "VoIP/vpn_hangouts_audio1.pcap",
+      "sha256": "523ceb26721c02a597f00743125e61257c987b2a4303afebdfce5f6871ebfa58",
+      "bytes": 71870096,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 446669,
+        "TCP": 38560,
+        "UDP": 407916,
+        "tcp_data_packets": 22386,
+        "other_ip": 193
+      },
+      "tcp_tuples": 129,
+      "bidirectional_tuples": 127,
+      "eligible_samples": 126,
+      "excluded_flows": {
+        "empty_payload_flow": 3
+      }
+    },
+    {
+      "path": "VoIP/vpn_hangouts_audio2.pcap",
+      "sha256": "28632760a7657a770e61d413c5bfeefa66f7eb686b28a300508068e7fd1340ca",
+      "bytes": 97785336,
+      "format": "pcapng",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 479063,
+        "TCP": 53126,
+        "tcp_data_packets": 32281,
+        "UDP": 425668,
+        "other_ip": 269
+      },
+      "tcp_tuples": 137,
+      "bidirectional_tuples": 137,
+      "eligible_samples": 132,
+      "excluded_flows": {
+        "empty_payload_flow": 5
+      }
+    },
+    {
+      "path": "VoIP/vpn_skype_audio1.pcap",
+      "sha256": "2b4df5698c0ebe6f37828f13a0417fac4f2a9f94f9ca0f7b651c8513c9496929",
+      "bytes": 49536856,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 375980,
+        "TCP": 5024,
+        "tcp_data_packets": 2267,
+        "UDP": 370886,
+        "other_ip": 70
+      },
+      "tcp_tuples": 103,
+      "bidirectional_tuples": 100,
+      "eligible_samples": 79,
+      "excluded_flows": {
+        "empty_payload_flow": 24
+      }
+    },
+    {
+      "path": "VoIP/vpn_skype_audio2.pcap",
+      "sha256": "a35f936ecc9e1797a61f2b7b6efeb13b02911c78fc76e2ef71eb8df2ddc2503e",
+      "bytes": 49336707,
+      "format": "pcap",
+      "link_types": [
+        101
+      ],
+      "counts": {
+        "packets": 372383,
+        "TCP": 2290,
+        "tcp_data_packets": 1112,
+        "UDP": 369990,
+        "other_ip": 103
+      },
+      "tcp_tuples": 56,
+      "bidirectional_tuples": 56,
+      "eligible_samples": 44,
+      "excluded_flows": {
+        "empty_payload_flow": 12
+      }
+    },
+    {
+      "path": "VoIP/vpn_voipbuster1a.pcap",
+      "sha256": "e8765d16adefba28752216c90f1f73a1398c73bb4fe9357b74ddd5031c67ac40",
+      "bytes": 51729420,
+      "format": "pcap",
+      "link_types": [
+        1
+      ],
+      "counts": {
+        "packets": 361469,
+        "UDP": 358858,
+        "non_ipv4": 1126,
+        "TCP": 1485,
+        "tcp_data_packets": 932
+      },
+      "tcp_tuples": 20,
+      "bidirectional_tuples": 20,
+      "eligible_samples": 19,
+      "excluded_flows": {
+        "empty_payload_flow": 1
+      }
+    },
+    {
+      "path": "VoIP/vpn_voipbuster1b.pcap",
+      "sha256": "4c06066bdcd8af4354da7f4da35fb4929b2842fafb3bede16a7e78b27e7e2315",
+      "bytes": 51572271,
+      "format": "pcap",
+      "link_types": [
+        1
+      ],
+      "counts": {
+        "packets": 363041,
+        "UDP": 360731,
+        "non_ipv4": 1337,
+        "TCP": 961,
+        "tcp_data_packets": 621,
+        "other_ip": 12
+      },
+      "tcp_tuples": 20,
+      "bidirectional_tuples": 16,
+      "eligible_samples": 16,
+      "excluded_flows": {
+        "empty_payload_flow": 4
+      }
+    }
+  ],
+  "sample_counts": {
+    "Chat": 183,
+    "Email": 138,
+    "FileTransfer": 290,
+    "P2P": 233,
+    "Streaming": 276,
+    "VoIP": 554
+  },
+  "total_samples": 1674,
+  "duplicate_representation_groups": 0,
+  "capture_isolation_feasible": false,
+  "resources": {
+    "elapsed_seconds": 28.422142729999905,
+    "peak_process_rss_mib": 85.2109375,
+    "gpu_used": false
+  }
+}

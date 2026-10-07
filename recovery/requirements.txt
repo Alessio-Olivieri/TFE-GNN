@@ -1,0 +1,5 @@
+numpy==1.26.4
+scapy==2.6.1
+scikit-learn==1.6.1
+torch-geometric==2.6.1
+psutil==7.0.0
