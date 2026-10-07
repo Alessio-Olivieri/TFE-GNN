@@ -1,0 +1,20 @@
+test_bidirectional_tuple_and_headers (recovery.test_recovery.ExtractionTests.test_bidirectional_tuple_and_headers) ... ok
+test_ethernet_and_vlan (recovery.test_recovery.ExtractionTests.test_ethernet_and_vlan) ... ok
+test_fragment_excluded (recovery.test_recovery.ExtractionTests.test_fragment_excluded) ... ok
+test_ip_options_do_not_shift_port_removal (recovery.test_recovery.ExtractionTests.test_ip_options_do_not_shift_port_removal) ... ok
+test_pcap_and_pcapng_equivalence (recovery.test_recovery.ExtractionTests.test_pcap_and_pcapng_equivalence) ... ok
+test_graph_pmi_against_independent_matrix (recovery.test_recovery.InterventionTests.test_graph_pmi_against_independent_matrix) ... ok
+test_random_happens_before_graph (recovery.test_recovery.InterventionTests.test_random_happens_before_graph) ... ok
+test_random_length_padding_and_rng_isolation (recovery.test_recovery.InterventionTests.test_random_length_padding_and_rng_isolation) ... ok
+test_zero_preserves_length_boundary (recovery.test_recovery.InterventionTests.test_zero_preserves_length_boundary) ... ok
+test_batch_cpu_and_model_gradients (recovery.test_recovery.SplitAndModelTests.test_batch_cpu_and_model_gradients) ... ok
+test_capture_split_refuses_insufficient_sources (recovery.test_recovery.SplitAndModelTests.test_capture_split_refuses_insufficient_sources) ... ok
+test_grouping_transitive_reproducible_and_complete (recovery.test_recovery.SplitAndModelTests.test_grouping_transitive_reproducible_and_complete) ... ok
+test_independent_metrics_and_sample_standard_deviation (recovery.test_recovery.SplitAndModelTests.test_independent_metrics_and_sample_standard_deviation) ... ok
+test_saved_split_rejects_tampered_indices_and_dataset (recovery.test_recovery.SplitAndModelTests.test_saved_split_rejects_tampered_indices_and_dataset) ... ok
+test_saved_split_reused_without_training_seed_dependency (recovery.test_recovery.SplitAndModelTests.test_saved_split_reused_without_training_seed_dependency) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 3.565s
+
+OK
