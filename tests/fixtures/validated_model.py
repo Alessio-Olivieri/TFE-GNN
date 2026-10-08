@@ -10,8 +10,7 @@ from pathlib import Path
 import torch
 from torch import nn
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from model import GCN_PyG, MixTemporalGNN_PyG  # noqa: E402
+from tests.fixtures.base_model import GCN_PyG, MixTemporalGNN_PyG
 
 
 class OriginalSemanticsEncoder(GCN_PyG):

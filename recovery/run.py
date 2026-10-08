@@ -23,7 +23,7 @@ from torch.utils.data import DataLoader
 
 from recovery.audit import CLASSES, SETTINGS
 from recovery.data import MODES, GraphFlows, collate, grouped_split, load_flows, prepare_graphs
-from recovery.model import RecoveredTFEGNN
+from src.model import TFEGNN
 from recovery.resources import ResourceMonitor
 
 
@@ -120,7 +120,7 @@ def train_attempt(samples, manifest, args, batch_size, log):
         torch.cuda.empty_cache()
         torch.cuda.reset_peak_memory_stats()
     monitor = ResourceMonitor().start()
-    model = RecoveredTFEGNN(args.payload_mode).to(device)
+    model = TFEGNN(payload_mode=args.payload_mode).to(device)
     initial_hash = hashlib.sha256(b''.join(v.detach().cpu().numpy().tobytes()
                                          for v in model.state_dict().values())).hexdigest()
     train_loader = dataloader(samples, manifest['indices']['train'], args, batch_size, True)

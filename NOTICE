@@ -1,0 +1,17 @@
+TFE-GNN architecture and upstream-derived implementation
+
+Haozhen Zhang, Le Yu, Xi Xiao, Qing Li, Francesco Mercaldo, Xiapu Luo,
+and Qixu Liu. "TFE-GNN: A Temporal Fusion Encoder Using Graph Neural
+Networks for Fine-grained Encrypted Traffic Classification."
+The Web Conference (WWW), 2023, pp. 2066-2075.
+Official implementation: https://github.com/ViktorAxelsen/TFE-GNN
+Reference revision: e62cb9f1e8b573ae962b0e605f50a1f0daeef1e2
+Upstream license: Apache License 2.0; the original license is in LICENSE.
+The reference revision contains no separate NOTICE file.
+
+This university project adapts the DGL architecture to PyTorch Geometric.
+The cross-gated fusion, temporal encoder and classifier follow the upstream
+architecture. Project modifications include PyG batching/graph construction,
+validated encoder semantics, reproducible preprocessing/splitting/training,
+payload controls, and conservative TLS/capture-provenance analyses.
+These modifications do not establish independent invention of the architecture.

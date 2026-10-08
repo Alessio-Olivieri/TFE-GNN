@@ -14,7 +14,7 @@ import torch
 
 from recovery.audit import packets, tcp_packet
 from recovery.data import grouped_split, payload_bytes, padded_graphs, collate
-from recovery.model import RecoveredTFEGNN, OriginalSemanticsEncoder
+from src.model import TFEGNN, GraphSAGEEncoder
 from recovery.run import dataloader, read_split
 from recovery.multiseed import independent_metrics, stats
 
@@ -206,7 +206,7 @@ class SplitAndModelTests(unittest.TestCase):
         batch = collate([(h, p, 0), (h, p, 1)])
         self.assertEqual(batch[0].num_graphs, 100)
         self.assertEqual(batch[0].x.device.type, 'cpu')
-        model = RecoveredTFEGNN()
+        model = TFEGNN()
         output = model(*batch)
         self.assertEqual(tuple(output.shape), (2, 6))
         torch.nn.functional.cross_entropy(output, batch[2]).backward()
