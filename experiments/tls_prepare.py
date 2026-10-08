@@ -73,7 +73,7 @@ def main():
     save(audit_root / 'integrity_before.json', dict(capture_root=str(args.capture_root),
         capture_sha256_before=sources, split_manifest=str(split_path), split_sha256=sha(split_path)))
     tls_audit(audit_root, args.output / 'ranges', inventory_path)
-    check(audit_root)
+    check(audit_root, args.tshark)
     coverage = read(audit_root / 'ciphertext_coverage.json')
     recorded = read('results/tls_ciphertext_ablation/transformation.json')
     assert coverage['range_manifest_sha256'] == recorded['range_manifest_sha256'], 'Audited range membership differs'

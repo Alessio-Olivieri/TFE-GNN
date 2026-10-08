@@ -151,7 +151,7 @@ def audit(out, data, inventory_path):
                  'https://www.rfc-editor.org/rfc/rfc5289', 'https://www.rfc-editor.org/rfc/rfc4253'],
         source_commit=subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
         source_sha256={str(p): sha(p) for p in sorted(Path('experiments').glob('application_*.py'))},
-        command="nix-shell experiments/audit-shell.nix --run '.venv-experiments/bin/python -m experiments.application_audit'",
+        entry_point="experiments.tls_prepare", audit_function="experiments.application_audit.audit",
         timestamp_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(), randomization_implemented=False)
     save(OUT / 'ciphertext_coverage.json', coverage)
     csv_save(OUT / 'ciphertext_coverage.csv', rows)

@@ -13,7 +13,7 @@ from experiments.application_audit import read
 from experiments.capture_audit import ip_offset, save
 
 
-def check(out):
+def check(out, tshark="tshark"):
     OUT = Path(out)
     evidence = read(OUT / 'parser_evidence.json')
     before = read(OUT / 'integrity_before.json')
@@ -37,7 +37,7 @@ def check(out):
             originals[frame] = (start, raw)
             if len(originals) == len(frames):
                 break
-        command = ['tshark', '-n', '-r', str(path), '-o', 'http.desegment_body:FALSE',
+        command = [tshark, '-n', '-r', str(path), '-o', 'http.desegment_body:FALSE',
                    '-o', 'tls.desegment_ssl_application_data:FALSE',
                    '-Y', ' || '.join(f'frame.number == {frame}' for frame in frames), '-T', 'pdml']
         output = subprocess.run(command, capture_output=True, text=True, check=True)

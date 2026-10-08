@@ -1,2 +1,0 @@
-comparison,n,accuracy_difference_mean,accuracy_difference_std,macro_f1_difference_mean,macro_f1_difference_std,std_ddof
-Real - TLS12-GCM-randomized,3,-0.022666666666666613,0.020132891827388633,-0.023344199980200837,0.020002568815777815,1

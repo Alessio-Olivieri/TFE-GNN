@@ -5,7 +5,7 @@ from pathlib import Path
 import subprocess
 import sys
 
-from experiments.application_audit import read
+from experiments.application_audit import LIMITATION, read
 from experiments.multiseed import independent_metrics
 from experiments.capture_audit import sha, save
 
@@ -47,7 +47,7 @@ def main():
     assert result['initial_state_sha256'] == reference['initial_state_sha256']
     if args.condition == 'real':
         assert result['test_predictions'] == reference['test_predictions'], 'Real baseline did not reproduce'
-    result.update(condition=args.condition, model_payload_mode='real',
+    result.update(condition=args.condition, model_payload_mode='real', limitation=LIMITATION,
         ciphertext_randomization_seed=32, transformation_metadata=recorded,
         exact_input_validation=validation)
     save(args.output / 'run.json', result)
