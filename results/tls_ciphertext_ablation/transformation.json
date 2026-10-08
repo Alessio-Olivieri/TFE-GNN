@@ -1,0 +1,120 @@
+{
+  "version": "tls12-gcm-packet-range-pcg64-v1",
+  "seed": 32,
+  "range_manifest_sha256": "a48fb5845234f9c778759037167b1eb652286298b7027d7364274a8801e246e9",
+  "input_file": "data/application_ciphertext/transformed_seed32/flows.json.gz",
+  "input_sha256": "fcb82b8de0acfb61c7d455034be341e78e57d810f1ccac314c1469aacaeaff59",
+  "graph_root": "data/application_ciphertext/transformed_seed32/graphs",
+  "model_payload_mode": "real",
+  "scientific_condition": "tls12_gcm_randomized",
+  "stable_source_metadata": "content_hash remains the source representation identity; input_sha256 identifies derived bytes",
+  "algorithm": "SHA256(canonical sorted compact ASCII JSON identity); full 32-byte big-endian integer; NumPy default_rng/PCG64",
+  "identity_fields": [
+    "version",
+    "global_seed",
+    "source_capture_id",
+    "flow_id",
+    "packet_index_within_flow",
+    "ciphertext_range_index",
+    "range_start",
+    "range_end"
+  ],
+  "distribution": "Independent uniform uint8 0..255; coincidental unchanged bytes permitted",
+  "targeted_bytes": 838456,
+  "changed_bytes": 835125,
+  "samples": 1674,
+  "samples_actually_changed": 565,
+  "split_class_counts": {
+    "train/0": {
+      "targeted_bytes": 81379,
+      "changed_bytes": 81062,
+      "affected_samples": 51
+    },
+    "validation/0": {
+      "targeted_bytes": 13947,
+      "changed_bytes": 13897,
+      "affected_samples": 9
+    },
+    "test/0": {
+      "targeted_bytes": 34608,
+      "changed_bytes": 34463,
+      "affected_samples": 16
+    },
+    "train/1": {
+      "targeted_bytes": 61434,
+      "changed_bytes": 61194,
+      "affected_samples": 71
+    },
+    "test/1": {
+      "targeted_bytes": 22289,
+      "changed_bytes": 22203,
+      "affected_samples": 20
+    },
+    "validation/1": {
+      "targeted_bytes": 15343,
+      "changed_bytes": 15292,
+      "affected_samples": 20
+    },
+    "train/2": {
+      "targeted_bytes": 12320,
+      "changed_bytes": 12267,
+      "affected_samples": 7
+    },
+    "test/2": {
+      "targeted_bytes": 0,
+      "changed_bytes": 0,
+      "affected_samples": 0
+    },
+    "validation/2": {
+      "targeted_bytes": 0,
+      "changed_bytes": 0,
+      "affected_samples": 0
+    },
+    "test/3": {
+      "targeted_bytes": 0,
+      "changed_bytes": 0,
+      "affected_samples": 0
+    },
+    "train/3": {
+      "targeted_bytes": 0,
+      "changed_bytes": 0,
+      "affected_samples": 0
+    },
+    "validation/3": {
+      "targeted_bytes": 0,
+      "changed_bytes": 0,
+      "affected_samples": 0
+    },
+    "train/4": {
+      "targeted_bytes": 169742,
+      "changed_bytes": 169070,
+      "affected_samples": 66
+    },
+    "validation/4": {
+      "targeted_bytes": 42748,
+      "changed_bytes": 42559,
+      "affected_samples": 16
+    },
+    "test/4": {
+      "targeted_bytes": 17743,
+      "changed_bytes": 17675,
+      "affected_samples": 11
+    },
+    "train/5": {
+      "targeted_bytes": 258059,
+      "changed_bytes": 257040,
+      "affected_samples": 190
+    },
+    "validation/5": {
+      "targeted_bytes": 60153,
+      "changed_bytes": 59893,
+      "affected_samples": 50
+    },
+    "test/5": {
+      "targeted_bytes": 48691,
+      "changed_bytes": 48510,
+      "affected_samples": 38
+    }
+  },
+  "split_sha256": "c319605abf36869be194e3541d0f080a34e8581c013f051a72556ea246a07e57"
+}

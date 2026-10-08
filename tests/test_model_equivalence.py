@@ -3,7 +3,7 @@ import unittest
 
 import torch
 
-from recovery.data import collate, padded_graphs
+from src.data import collate, padded_graphs
 from src.model import TFEGNN
 from tests.fixtures.validated_model import RecoveredTFEGNN
 

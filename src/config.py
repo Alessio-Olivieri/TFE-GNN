@@ -1,3 +1,7 @@
+"""Compatibility constants for the original graph-constructor boundary.
+
+Validated training settings are declared in src.train and the experiment guide.
+"""
 import torch
 '''
 Training Configuration

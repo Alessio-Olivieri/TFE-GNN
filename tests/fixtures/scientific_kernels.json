@@ -1,0 +1,212 @@
+{
+  "archive_commit": "121f48446611c35763a46c8b7546ee3c8543458c",
+  "normalization": "Package import paths and canonical model symbol only",
+  "definitions": [
+    {
+      "path": "src/graphs.py",
+      "definition": "construct_graph_pyg",
+      "ast_sha256": "fffea740cc51ab694c8ba43c7bb5eb1197b9af69ffdc88d95b5fcebea2702619"
+    },
+    {
+      "path": "src/capture.py",
+      "definition": "options",
+      "ast_sha256": "c0faf4fed8ccae8252f50cb5eb36bf60e7b74e240ed1c4be7f2e601705088ee8"
+    },
+    {
+      "path": "src/capture.py",
+      "definition": "packets",
+      "ast_sha256": "a3482b0bb30aead8a75f158601c0670ed04f9afea17c060b64e4bede55b854d6"
+    },
+    {
+      "path": "src/capture.py",
+      "definition": "tcp_packet",
+      "ast_sha256": "3e67296d3e5c26b680a986227ea6db83c240932cdc584946824f2103d95c9492"
+    },
+    {
+      "path": "src/capture.py",
+      "definition": "audit",
+      "ast_sha256": "2bb8fcbf6e0ead34edb5f090f5f5947d87fcc2886258752da9b877fdba0347b8"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "payload_bytes",
+      "ast_sha256": "c6f928b52a58351d5c5fd80c3ac990d5b065fd0df879446df53f9bfe8fe8033e"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "grouped_split",
+      "ast_sha256": "faa728225999534aa170718f76cb1ac956c8b10cc22aa472d2455c322c539275"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "padded_graphs",
+      "ast_sha256": "2f201e4b4809635a151877b3b8569f7b94cbfcfb08ecb550559f15cc58fde172"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "graph_job",
+      "ast_sha256": "bb925a47e2592c19c34c67a91302b20c383cf91c73cf241ae3bca7fba9298e7f"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "prepare_graphs",
+      "ast_sha256": "b171246b8ec4c727af54f847c9944786d782bf4d08f21cd58fcbfad54d798f2a"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "GraphFlows",
+      "ast_sha256": "d6240b99a0de8c0431a78e82b744b97085c964eb34f1cadd2bad717ede36fd6f"
+    },
+    {
+      "path": "src/data.py",
+      "definition": "collate",
+      "ast_sha256": "75411eecfaea571a9b4a534903ad4d1d228244627ba3eca79f478bfdbcb726c6"
+    },
+    {
+      "path": "src/train.py",
+      "definition": "seed_all",
+      "ast_sha256": "e0abc982f990283e33a894ef59ac790436786b373788481dde34e637af54ab9b"
+    },
+    {
+      "path": "src/train.py",
+      "definition": "evaluate",
+      "ast_sha256": "7e7305d2ff4be07420eeb8d82e10b180b63c99fa5891bea703d42eca8006ac56"
+    },
+    {
+      "path": "src/train.py",
+      "definition": "dataloader",
+      "ast_sha256": "ac07f0509b0e1ff19b76591d9ee75bb762ca458475bfcb875c4a6822f2c757e1"
+    },
+    {
+      "path": "src/train.py",
+      "definition": "seed_worker",
+      "ast_sha256": "0340d6d96c4af129ff7b77655afaa1ae5d4dd4ec5a8c5b5897f4029e61f37c0e"
+    },
+    {
+      "path": "src/train.py",
+      "definition": "read_split",
+      "ast_sha256": "5b1725d013a5830eac4ce4b4b922cb25817555cf2521bce155f408e937c48053"
+    },
+    {
+      "path": "src/train.py",
+      "definition": "train_attempt",
+      "ast_sha256": "2256cc9cc7f6d722e6d7c5a44288913f8dea3405fe3d2649eaccc27df3dbd569"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "Uncertain",
+      "ast_sha256": "927fc3252f352e3a616c6a981d844a23ab40e8dfed05bc967b93a9a592e8db68"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "reassemble",
+      "ast_sha256": "155295abb9f713867069278043afa76a030d6eeac1c428c54f115d82a4d39044"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "records",
+      "ast_sha256": "61cd01a2f5136e731801359da76b856d75ba0e6b19404dae1ff50c65b6bd136e"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "handshakes",
+      "ast_sha256": "36a335677a539c5f69547b697118d17728fdc30c1cfbee53c2f12f64d2831c3d"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "extensions",
+      "ast_sha256": "140794dd64b28d39d4df5cbf05be35895a4fde206465f66969e44d3dc84be1ee"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "hello",
+      "ast_sha256": "76bf1b654679df19c559fdc994f490abd473d4e4f16e2c352f9d2cb5ec6f555e"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "consecutive_ranges",
+      "ast_sha256": "bc6396dfb430ae1422b81146c5f5c19f83143596f5d7ebbfe6e896b9942c6c7b"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "tls_ranges",
+      "ast_sha256": "9ddbcff5dc0e6a37a9ab61f5feb3c879b9cbf6ba6c2230200d20c11d97216202"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "project",
+      "ast_sha256": "1bc4376ddc1c57bff2b3d66c0e098b1583d110e3df051b900474a5e17c9a836c"
+    },
+    {
+      "path": "experiments/application_tls.py",
+      "definition": "classify_flow",
+      "ast_sha256": "edeff0114655991b298f6f309b481eb5fc386ef782ca5fa63549daf81076be0c"
+    },
+    {
+      "path": "experiments/application_transform.py",
+      "definition": "randomize",
+      "ast_sha256": "20e1b97e3e7209c936fc64efd7c5cb31b7fe2f6b7eac5a7d1bd950d1b80c4195"
+    },
+    {
+      "path": "experiments/application_transform.py",
+      "definition": "transformed_samples",
+      "ast_sha256": "5307b6bae11d2be14e27b1848b6392f13fb4865555019362a2371179a75c3f75"
+    },
+    {
+      "path": "experiments/capture_audit.py",
+      "definition": "acquisition_key",
+      "ast_sha256": "ecc49462b8ab8e276b0b2ecfb031319e723e85b73180c594409d47be1f140fae"
+    },
+    {
+      "path": "experiments/capture_audit.py",
+      "definition": "assess_feasibility",
+      "ast_sha256": "bcb881c42072badf0167039657cd607f907325310902cd2551d586f6d70c00bf"
+    },
+    {
+      "path": "experiments/capture_audit.py",
+      "definition": "refine_capture_groups",
+      "ast_sha256": "5aae5c72e51cf3aeb22fefbad6980888b3c6cfb47d04f323f2d9e4d940ce4633"
+    },
+    {
+      "path": "experiments/capture_audit.py",
+      "definition": "validate_assignment",
+      "ast_sha256": "ae1d7da58c30ce25ced29e649cc8e3fc7f0241dc9ce4ae3eb6379ebd55ce3197"
+    },
+    {
+      "path": "experiments/capture_audit.py",
+      "definition": "scan_capture",
+      "ast_sha256": "6c987472af0ca71f83b35f595701d3dc9e6d51f75b403f6206db61c20db0696e"
+    },
+    {
+      "path": "experiments/capture_audit_report.py",
+      "definition": "ipv6_transport",
+      "ast_sha256": "0333577aa6c1a77b48fb422fcf6aa07dc99112f6a69ef8889ae142c71b2facc3"
+    },
+    {
+      "path": "experiments/capture_audit_report.py",
+      "definition": "group_evidence",
+      "ast_sha256": "c6bcd57b4161ee882512288ccdf59137fccd8c2ad82ecd7afaf83b83b2f8185a"
+    },
+    {
+      "path": "experiments/capture_audit_report.py",
+      "definition": "coverage_status",
+      "ast_sha256": "37508b97f6694ab6a516325397e52d2436fe89bddebf43c3b132001e0969e3f7"
+    },
+    {
+      "path": "experiments/capture_audit_report.py",
+      "definition": "supplemental_scope",
+      "ast_sha256": "4078a5cc288c8c7a26b7621ba0c63e62f4a1bdeaa59defff32f3df67c44eb635"
+    },
+    {
+      "path": "experiments/multiseed.py",
+      "definition": "independent_metrics",
+      "ast_sha256": "88e2d4264ce903edc8a695c45c454a524c8caad7f4d36ddd3dcaa15162ba7100"
+    },
+    {
+      "path": "experiments/multiseed.py",
+      "definition": "stats",
+      "ast_sha256": "f0b26c65f9ad972339c83a5e240c4ac756f99d7b8f55c71278f7489dab332f77"
+    }
+  ],
+  "ast_python_version": "3.12"
+}
