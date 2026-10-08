@@ -1,0 +1,93 @@
+{
+  "scope": "Secondary descriptive investigation of unexpectedly higher TLS-randomized results; no tuning or additional runs",
+  "matched_checks": [
+    {
+      "training_seed": 32,
+      "identical_initialization": true,
+      "identical_hyperparameters": true,
+      "same_test_ids_labels": true,
+      "real_exact_baseline_reproduction": true,
+      "real_final_training_loss": 0.035390348034543856,
+      "tls_final_training_loss": 0.035502072892418426,
+      "real_final_training_accuracy": 0.9889078498293515,
+      "tls_final_training_accuracy": 0.9872013651877133,
+      "prediction_changes": {
+        "affected": {
+          "samples": 85,
+          "real_correct": 84,
+          "tls_correct": 84,
+          "predictions_differ": 2
+        },
+        "unchanged_test_input": {
+          "samples": 165,
+          "real_correct": 149,
+          "tls_correct": 150,
+          "predictions_differ": 15
+        }
+      }
+    },
+    {
+      "training_seed": 42,
+      "identical_initialization": true,
+      "identical_hyperparameters": true,
+      "same_test_ids_labels": true,
+      "real_exact_baseline_reproduction": true,
+      "real_final_training_loss": 0.09157357613139694,
+      "tls_final_training_loss": 0.04842649504777069,
+      "real_final_training_accuracy": 0.9701365187713311,
+      "tls_final_training_accuracy": 0.985494880546075,
+      "prediction_changes": {
+        "affected": {
+          "samples": 85,
+          "real_correct": 84,
+          "tls_correct": 85,
+          "predictions_differ": 1
+        },
+        "unchanged_test_input": {
+          "samples": 165,
+          "real_correct": 150,
+          "tls_correct": 154,
+          "predictions_differ": 17
+        }
+      }
+    },
+    {
+      "training_seed": 52,
+      "identical_initialization": true,
+      "identical_hyperparameters": true,
+      "same_test_ids_labels": true,
+      "real_exact_baseline_reproduction": true,
+      "real_final_training_loss": 0.14551814202663851,
+      "tls_final_training_loss": 0.04837194852379577,
+      "real_final_training_accuracy": 0.9479522184300341,
+      "tls_final_training_accuracy": 0.9837883959044369,
+      "prediction_changes": {
+        "affected": {
+          "samples": 85,
+          "real_correct": 75,
+          "tls_correct": 85,
+          "predictions_differ": 10
+        },
+        "unchanged_test_input": {
+          "samples": 165,
+          "real_correct": 152,
+          "tls_correct": 153,
+          "predictions_differ": 13
+        }
+      }
+    }
+  ],
+  "references": {
+    "all_graphs": "graph_pair_validation.json",
+    "byte_integrity": "transformation_validation.json",
+    "metrics_and_source_integrity": "validation.json"
+  },
+  "findings": [
+    "All three Real baselines reproduce exactly; matched initialization, hyperparameters and identities agree.",
+    "Only certified ciphertext bytes differ; all headers and untargeted packet graphs agree, and transformed payload graphs are reconstructed.",
+    "Predictions can change on unchanged test inputs because the model was trained on transformed training data.",
+    "Optimization-path effects, finite byte-graph perturbations or a regularization-like effect are possible explanations, not established causes.",
+    "One transformation seed and three model seeds cannot establish that ciphertext is generally uninformative, or that randomization improves capture-independent generalization."
+  ],
+  "limitations": "These results use the existing flow-disjoint evaluation. The available captures cannot support defensible six-class capture-independent evaluation, so capture-level generalization remains unresolved."
+}

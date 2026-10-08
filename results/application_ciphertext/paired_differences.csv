@@ -1,0 +1,4 @@
+comparison,training_seed,accuracy_difference,macro_f1_difference
+Real - TLS12-GCM-randomized,32,-0.0040000000000000036,-0.004110950883380204
+Real - TLS12-GCM-randomized,42,-0.019999999999999907,-0.021885430354376845
+Real - TLS12-GCM-randomized,52,-0.04399999999999993,-0.044036218702845464
